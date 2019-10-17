@@ -1,0 +1,52 @@
+{
+  "type": "vstack",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "WestnileToScore",
+          "deps": []
+        },
+        {
+          "ref": "westnile",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "WestnileToScore_stacked",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "dlabouesse"
+    },
+    "lastModifiedOn": 1530713414668
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dlabouesse"
+    },
+    "lastModifiedOn": 1530713325156
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}

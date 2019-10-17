@@ -1,0 +1,153 @@
+{
+  "mode": "UNION",
+  "selectedColumns": [
+    "Id",
+    "Date",
+    "Address",
+    "Species",
+    "Block",
+    "Street",
+    "Trap",
+    "AddressNumberAndStreet",
+    "Latitude",
+    "Longitude",
+    "AddressAccuracy",
+    "NumMosquitos",
+    "WnvPresent"
+  ],
+  "originColumnName": "original_dataset",
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "WestnileToScore",
+      "index": 0
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "westnile",
+      "index": 1
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "timestampNoTzAsDate": false,
+            "name": "Id",
+            "type": "string",
+            "maxLength": -1
+          },
+          {
+            "timestampNoTzAsDate": false,
+            "name": "Date",
+            "type": "string",
+            "maxLength": -1
+          },
+          {
+            "timestampNoTzAsDate": false,
+            "name": "Address",
+            "type": "string",
+            "maxLength": -1
+          },
+          {
+            "timestampNoTzAsDate": false,
+            "name": "Species",
+            "type": "string",
+            "maxLength": -1
+          },
+          {
+            "timestampNoTzAsDate": false,
+            "name": "Block",
+            "type": "string",
+            "maxLength": -1
+          },
+          {
+            "timestampNoTzAsDate": false,
+            "name": "Street",
+            "type": "string",
+            "maxLength": -1
+          },
+          {
+            "timestampNoTzAsDate": false,
+            "name": "Trap",
+            "type": "string",
+            "maxLength": -1
+          },
+          {
+            "timestampNoTzAsDate": false,
+            "name": "AddressNumberAndStreet",
+            "type": "string",
+            "maxLength": -1
+          },
+          {
+            "timestampNoTzAsDate": false,
+            "name": "Latitude",
+            "type": "string",
+            "maxLength": -1
+          },
+          {
+            "timestampNoTzAsDate": false,
+            "name": "Longitude",
+            "type": "string",
+            "maxLength": -1
+          },
+          {
+            "timestampNoTzAsDate": false,
+            "name": "AddressAccuracy",
+            "type": "string",
+            "maxLength": -1
+          },
+          {
+            "timestampNoTzAsDate": false,
+            "name": "NumMosquitos",
+            "type": "string",
+            "maxLength": -1
+          },
+          {
+            "timestampNoTzAsDate": false,
+            "name": "WnvPresent",
+            "type": "string",
+            "maxLength": -1
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "enabled": false
+  },
+  "addOriginColumn": false
+}

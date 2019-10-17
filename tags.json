@@ -1,0 +1,20 @@
+{
+  "tags": {
+    "test2": {
+      "color": "#1ac2ab"
+    },
+    "test3": {
+      "color": "#0f6d82"
+    },
+    "test": {
+      "color": "#123883"
+    },
+    "recipe-editor": {},
+    "imported": {
+      "color": "#263238"
+    },
+    "azure poc": {
+      "color": "#77bec2"
+    }
+  }
+}

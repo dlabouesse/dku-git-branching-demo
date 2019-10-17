@@ -1,0 +1,58 @@
+{
+  "pages": [
+    {
+      "id": "VqyCoz8",
+      "grid": {
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 6,
+              "height": 4
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "showXAxis": true,
+              "showYAxis": true,
+              "showLegend": false,
+              "showTooltips": true,
+              "autoPlayAnimation": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "6WlwGqQ",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
+      },
+      "showTitle": false
+    }
+  ],
+  "owner": "dlabouesse",
+  "listed": true,
+  "name": "Default dashboard",
+  "showGrid": true,
+  "versionTag": {
+    "versionNumber": 5,
+    "lastModifiedBy": {
+      "login": "dlabouesse"
+    },
+    "lastModifiedOn": 1568296653112
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dlabouesse"
+    },
+    "lastModifiedOn": 1530199972123
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

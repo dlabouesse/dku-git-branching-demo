@@ -1,0 +1,60 @@
+{
+  "type": "join",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "weather_partitioned_filtered_prepared",
+          "deps": [
+            {
+              "out": "weather_partitioned_filtered_prepared_joined",
+              "idim": "date",
+              "odim": "date",
+              "func": "equals",
+              "params": {}
+            }
+          ]
+        },
+        {
+          "ref": "westnile_prepared_by_Date_and_Trap",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "weather_partitioned_filtered_prepared_joined",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 13,
+    "lastModifiedBy": {
+      "login": "dlabouesse"
+    },
+    "lastModifiedOn": 1530713458212
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dlabouesse"
+    },
+    "lastModifiedOn": 1530290766825
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}

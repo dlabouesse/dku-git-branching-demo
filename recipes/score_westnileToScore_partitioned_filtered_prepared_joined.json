@@ -1,0 +1,65 @@
+{
+  "checklists": {
+    "checklists": []
+  }, 
+  "creationTag": {
+    "lastModifiedBy": {
+      "login": "dlabouesse"
+    }, 
+    "lastModifiedOn": 1530713752990, 
+    "versionNumber": 0
+  }, 
+  "customMeta": {
+    "kv": {}
+  }, 
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "deps": [
+            {
+              "func": "equals", 
+              "idim": "date", 
+              "odim": "date", 
+              "out": "westnileToScore_partitioned_filtered_prepared_joined_scored", 
+              "params": {}
+            }
+          ], 
+          "ref": "westnileToScore_partitioned_filtered_prepared_joined"
+        }
+      ]
+    }, 
+    "model": {
+      "items": [
+        {
+          "deps": [], 
+          "ref": "1fWtaD0A"
+        }
+      ]
+    }
+  }, 
+  "maxRunningActivities": 0, 
+  "neverRecomputeExistingPartitions": false, 
+  "optionalDependencies": false, 
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "appendMode": false, 
+          "ref": "westnileToScore_partitioned_filtered_prepared_joined_scored"
+        }
+      ]
+    }
+  }, 
+  "params": {}, 
+  "redispatchPartitioning": false, 
+  "tags": [], 
+  "type": "prediction_scoring", 
+  "versionTag": {
+    "lastModifiedBy": {
+      "login": "dlabouesse"
+    }, 
+    "lastModifiedOn": 1530713761742, 
+    "versionNumber": 1
+  }
+}

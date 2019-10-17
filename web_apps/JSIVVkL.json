@@ -1,0 +1,50 @@
+{
+  "type": "STANDARD",
+  "hasLegacyBackendURL": false,
+  "params": {
+    "html": "\u003c!-- Body of your app --\u003e",
+    "css": "body {\n}",
+    "backendEnabled": false,
+    "autoStartBackend": false,
+    "envSelection": {
+      "envMode": "INHERIT"
+    },
+    "libraries": [
+      "jquery",
+      "dataiku"
+    ],
+    "infra": {
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      },
+      "exposition": {
+        "type": "local_process",
+        "params": {}
+      },
+      "nbReplicas": 1
+    }
+  },
+  "config": {},
+  "name": "test",
+  "apiKey": "PZO9zR5vVASWoSPNqC0zdX4k7rVluloV",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dlabouesse"
+    },
+    "lastModifiedOn": 1570822495109
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dlabouesse"
+    },
+    "lastModifiedOn": 1570822495109
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  },
+  "customFields": {},
+  "isVirtual": false
+}

@@ -1,0 +1,55 @@
+{
+  "checklists": {
+    "checklists": []
+  }, 
+  "creationTag": {
+    "lastModifiedBy": {
+      "login": "dlabouesse"
+    }, 
+    "lastModifiedOn": 1530295580950, 
+    "versionNumber": 0
+  }, 
+  "customMeta": {
+    "kv": {}
+  }, 
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "deps": [
+            {
+              "func": "all_available", 
+              "idim": "date", 
+              "params": {}
+            }
+          ], 
+          "ref": "weather_partitioned_filtered_prepared_joined"
+        }
+      ]
+    }
+  }, 
+  "maxRunningActivities": 0, 
+  "neverRecomputeExistingPartitions": false, 
+  "optionalDependencies": false, 
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "appendMode": false, 
+          "ref": "1fWtaD0A"
+        }
+      ]
+    }
+  }, 
+  "params": {}, 
+  "redispatchPartitioning": false, 
+  "tags": [], 
+  "type": "prediction_training", 
+  "versionTag": {
+    "lastModifiedBy": {
+      "login": "dlabouesse"
+    }, 
+    "lastModifiedOn": 1530713558459, 
+    "versionNumber": 3
+  }
+}

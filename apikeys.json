@@ -1,0 +1,23 @@
+[
+  {
+    "execSQLLike": false,
+    "localDatasets": [],
+    "projectPrivileges": {
+      "admin": false,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
+    },
+    "id": "wKgnSnC5UDIX4F56",
+    "key": "PZO9zR5vVASWoSPNqC0zdX4k7rVluloV",
+    "label": "Key for Web app test(JSIVVkL)",
+    "createdOn": 1570822493989
+  }
+]
