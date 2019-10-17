@@ -9,7 +9,9 @@
     "test": {
       "color": "#123883"
     },
-    "recipe-editor": {},
+    "recipe-editor": {
+      "color": "#1ac2ab"
+    },
     "imported": {
       "color": "#263238"
     },
