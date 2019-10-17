@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1571311748880
+    "lastModifiedOn": 1571311753910
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,73 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "Id",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "Date",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "Address",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "Species",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "Block",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "Street",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "Trap",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "AddressNumberAndStreet",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "Latitude",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "Longitude",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "AddressAccuracy",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "NumMosquitos",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "WnvPresent",
+        "type": "string",
+        "originalType": "text"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
