@@ -5,27 +5,44 @@
   "params": {
     "engineParams": {
       "spark": {
-        "pipelineAllowStart": true,
-        "pipelineAllowMerge": true,
+        "readParams": {
+          "mode": "AUTO",
+          "autoModeRepartitionInto": 10,
+          "map": {
+            "westnile": {
+              "repartition": 10
+            },
+            "WestnileToScore_stacked": {
+              "repartition": 10
+            }
+          }
+        },
+        "useGlobalMetastore": false,
+        "useNativeProcessors": true,
         "sparkConfig": {
           "inheritConf": "default",
           "conf": []
         },
-        "readParams": {
-          "map": {
-            "westnile": {
-              "repartition": 10,
-              "cache": false
-            },
-            "WestnileToScore_stacked": {
-              "repartition": 10,
-              "cache": false
-            }
-          }
-        },
-        "useGlobalMetastore": false
+        "executionEngine": "SPARK_SUBMIT",
+        "pipelineAllowStart": true,
+        "pipelineAllowMerge": true,
+        "skipPrerunValidate": false
+      },
+      "hive": {
+        "inheritConf": "default",
+        "hiveconf": [],
+        "executionEngine": "HIVECLI_LOCAL",
+        "addDkuUdf": false,
+        "skipPrerunValidate": false
+      },
+      "impala": {
+        "forceStreamMode": true
       },
       "hadoopConfigKeys": [],
+      "sqlPipelineParams": {
+        "pipelineAllowStart": true,
+        "pipelineAllowMerge": true
+      },
       "maxThreads": 8
     }
   },
@@ -38,7 +55,7 @@
     "main": {
       "items": [
         {
-          "ref": "WestnileToScore_stacked",
+          "ref": "WestnileToScore_stacked_sql",
           "deps": []
         }
       ]
@@ -55,11 +72,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
-      "login": "dlabouesse"
+      "login": "admin"
     },
-    "lastModifiedOn": 1530713430577
+    "lastModifiedOn": 1571311459879
   },
   "creationTag": {
     "versionNumber": 0,
@@ -69,6 +86,7 @@
     "lastModifiedOn": 1530290264833
   },
   "tags": [],
+  "customFields": {},
   "checklists": {
     "checklists": []
   }
