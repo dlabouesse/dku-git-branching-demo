@@ -25,18 +25,18 @@
     "main": {
       "items": [
         {
-          "ref": "WestnileToScore_stacked",
+          "ref": "WestnileToScore_stacked_sql",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
-      "login": "dlabouesse"
+      "login": "admin"
     },
-    "lastModifiedOn": 1530713414668
+    "lastModifiedOn": 1571311429636
   },
   "creationTag": {
     "versionNumber": 0,
@@ -46,6 +46,7 @@
     "lastModifiedOn": 1530713325156
   },
   "tags": [],
+  "customFields": {},
   "checklists": {
     "checklists": []
   }

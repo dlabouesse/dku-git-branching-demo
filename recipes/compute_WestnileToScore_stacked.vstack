@@ -65,82 +65,56 @@
       "schema": {
         "columns": [
           {
-            "timestampNoTzAsDate": false,
             "name": "Id",
-            "type": "string",
-            "maxLength": -1
+            "type": "string"
           },
           {
-            "timestampNoTzAsDate": false,
             "name": "Date",
-            "type": "string",
-            "maxLength": -1
+            "type": "string"
           },
           {
-            "timestampNoTzAsDate": false,
             "name": "Address",
-            "type": "string",
-            "maxLength": -1
+            "type": "string"
           },
           {
-            "timestampNoTzAsDate": false,
             "name": "Species",
-            "type": "string",
-            "maxLength": -1
+            "type": "string"
           },
           {
-            "timestampNoTzAsDate": false,
             "name": "Block",
-            "type": "string",
-            "maxLength": -1
+            "type": "string"
           },
           {
-            "timestampNoTzAsDate": false,
             "name": "Street",
-            "type": "string",
-            "maxLength": -1
+            "type": "string"
           },
           {
-            "timestampNoTzAsDate": false,
             "name": "Trap",
-            "type": "string",
-            "maxLength": -1
+            "type": "string"
           },
           {
-            "timestampNoTzAsDate": false,
             "name": "AddressNumberAndStreet",
-            "type": "string",
-            "maxLength": -1
+            "type": "string"
           },
           {
-            "timestampNoTzAsDate": false,
             "name": "Latitude",
-            "type": "string",
-            "maxLength": -1
+            "type": "string"
           },
           {
-            "timestampNoTzAsDate": false,
             "name": "Longitude",
-            "type": "string",
-            "maxLength": -1
+            "type": "string"
           },
           {
-            "timestampNoTzAsDate": false,
             "name": "AddressAccuracy",
-            "type": "string",
-            "maxLength": -1
+            "type": "string"
           },
           {
-            "timestampNoTzAsDate": false,
             "name": "NumMosquitos",
-            "type": "string",
-            "maxLength": -1
+            "type": "string"
           },
           {
-            "timestampNoTzAsDate": false,
             "name": "WnvPresent",
-            "type": "string",
-            "maxLength": -1
+            "type": "string"
           }
         ],
         "userModified": false
