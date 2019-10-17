@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1571311427769
+    "lastModifiedOn": 1571311429444
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,60 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "Id",
+        "type": "string"
+      },
+      {
+        "name": "Date",
+        "type": "string"
+      },
+      {
+        "name": "Address",
+        "type": "string"
+      },
+      {
+        "name": "Species",
+        "type": "string"
+      },
+      {
+        "name": "Block",
+        "type": "string"
+      },
+      {
+        "name": "Street",
+        "type": "string"
+      },
+      {
+        "name": "Trap",
+        "type": "string"
+      },
+      {
+        "name": "AddressNumberAndStreet",
+        "type": "string"
+      },
+      {
+        "name": "Latitude",
+        "type": "string"
+      },
+      {
+        "name": "Longitude",
+        "type": "string"
+      },
+      {
+        "name": "AddressAccuracy",
+        "type": "string"
+      },
+      {
+        "name": "NumMosquitos",
+        "type": "string"
+      },
+      {
+        "name": "WnvPresent",
+        "type": "string"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
