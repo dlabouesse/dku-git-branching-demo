@@ -188,40 +188,28 @@
       "schema": {
         "columns": [
           {
-            "timestampNoTzAsDate": false,
             "name": "Date",
-            "type": "date",
-            "maxLength": -1
+            "type": "date"
           },
           {
-            "timestampNoTzAsDate": false,
             "name": "Trap",
-            "type": "string",
-            "maxLength": -1
+            "type": "string"
           },
           {
-            "timestampNoTzAsDate": false,
             "name": "GeoPoint",
-            "type": "string",
-            "maxLength": -1
+            "type": "string"
           },
           {
-            "timestampNoTzAsDate": false,
             "name": "Species_concat",
-            "type": "string",
-            "maxLength": -1
+            "type": "string"
           },
           {
-            "timestampNoTzAsDate": false,
             "name": "NumMosquitos_sum",
-            "type": "bigint",
-            "maxLength": -1
+            "type": "bigint"
           },
           {
-            "timestampNoTzAsDate": false,
             "name": "WnvPresent_max",
-            "type": "bigint",
-            "maxLength": -1
+            "type": "bigint"
           }
         ],
         "userModified": false
