@@ -14,6 +14,9 @@
             },
             "WestnileToScore_stacked": {
               "repartition": 10
+            },
+            "WestnileToScore_stacked_sql": {
+              "repartition": 10
             }
           }
         },
@@ -72,11 +75,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1571311459879
+    "lastModifiedOn": 1571311461688
   },
   "creationTag": {
     "versionNumber": 0,
