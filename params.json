@@ -33,7 +33,7 @@
     "flowBuildSettings": {
       "mergeSparkPipelines": false,
       "pruneBeforeSparkPipelines": true,
-      "mergeSqlPipelines": false,
+      "mergeSqlPipelines": true,
       "pruneBeforeSqlPipelines": true
     },
     "limitsSettings": {
@@ -172,11 +172,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 49,
+    "versionNumber": 50,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1571312127071
+    "lastModifiedOn": 1571911736454
   },
   "creationTag": {
     "versionNumber": 0,
