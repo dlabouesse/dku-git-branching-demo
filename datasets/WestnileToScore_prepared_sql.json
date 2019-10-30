@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1572457398250
+    "lastModifiedOn": 1572457428807
   },
   "creationTag": {
     "versionNumber": 0,
@@ -117,14 +117,19 @@
       },
       {
         "type": "col_stats",
-        "enabled": false,
+        "enabled": true,
         "computeOnBuildMode": "NO",
         "meta": {
           "name": "Columns statistics",
           "level": 2
         },
         "configuration": {
-          "aggregates": []
+          "aggregates": [
+            {
+              "column": "Address",
+              "aggregated": "COUNT_DISTINCT"
+            }
+          ]
         }
       },
       {
