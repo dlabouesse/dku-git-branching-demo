@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1572457428807
+    "lastModifiedOn": 1572457435540
   },
   "creationTag": {
     "versionNumber": 0,
@@ -228,7 +228,8 @@
         "reporting:BUILD_DURATION",
         "reporting:WARNING_COUNT",
         "reporting:BUILD_SUCCESS",
-        "reporting:METRICS_COMPUTATION_DURATION"
+        "reporting:METRICS_COMPUTATION_DURATION",
+        "col_stats:COUNT_DISTINCT:Address"
       ]
     }
   },
