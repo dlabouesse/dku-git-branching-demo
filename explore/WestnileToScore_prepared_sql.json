@@ -51,7 +51,7 @@
         "type": "pivot_table",
         "variant": "normal",
         "name": "Count by Address and Address",
-        "userEditedName": false,
+        "userEditedName": true,
         "genericDimension0": [],
         "genericDimension1": [],
         "facetDimension": [],
