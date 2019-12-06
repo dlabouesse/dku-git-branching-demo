@@ -35,11 +35,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1575644918678
+    "lastModifiedOn": 1575645024011
   },
   "creationTag": {
     "versionNumber": 0,
@@ -56,7 +56,16 @@
     "importProjectKey": "KAGGLEWESTNILEVIRUS"
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "phone",
+        "type": "string"
+      }
+    ],
     "userModified": true
   },
   "metrics": {

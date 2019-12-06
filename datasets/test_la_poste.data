@@ -1,3 +1,35 @@
 {
-  "data": []
+  "data": [
+    [
+      "blabla",
+      "0123456789"
+    ],
+    [
+      "bloblo",
+      "0123456789"
+    ],
+    [
+      "tata",
+      "0123456789"
+    ],
+    [
+      "toto",
+      "0123456789"
+    ],
+    [
+      "titi",
+      "0123456789"
+    ],
+    [
+      null,
+      null
+    ]
+  ],
+  "schema": {
+    "columns": [
+      {"name":"id","type":"string"},
+      {"name":"phone","type":"string"}
+    ],
+    "userModified": false
+  }
 }
