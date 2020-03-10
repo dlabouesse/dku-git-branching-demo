@@ -1,6 +1,7 @@
 {
   "mode": "UNION",
   "selectedColumns": [
+    "Id",
     "Date",
     "Address",
     "Species",
@@ -12,8 +13,7 @@
     "Longitude",
     "AddressAccuracy",
     "NumMosquitos",
-    "WnvPresent",
-    "Id"
+    "WnvPresent"
   ],
   "originColumnName": "original_dataset",
   "engineParams": {
@@ -44,16 +44,13 @@
   },
   "virtualInputs": [
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "originLabel": "westnile",
+      "preFilter": {},
+      "originLabel": "WestnileToScore",
       "index": 0
     },
     {
       "preFilter": {},
-      "originLabel": "WestnileToScore",
+      "originLabel": "westnile",
       "index": 1
     }
   ],
@@ -61,6 +58,10 @@
     "$status": {
       "schema": {
         "columns": [
+          {
+            "name": "Id",
+            "type": "string"
+          },
           {
             "name": "Date",
             "type": "string"
@@ -107,10 +108,6 @@
           },
           {
             "name": "WnvPresent",
-            "type": "string"
-          },
-          {
-            "name": "Id",
             "type": "string"
           }
         ],

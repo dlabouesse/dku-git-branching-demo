@@ -11,11 +11,11 @@
     "main": {
       "items": [
         {
-          "ref": "KAGGLEWESTNILEVIRUS.westnile",
+          "ref": "WestnileToScore",
           "deps": []
         },
         {
-          "ref": "WestnileToScore",
+          "ref": "westnile",
           "deps": []
         }
       ]
@@ -32,11 +32,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583861799547
+    "lastModifiedOn": 1583861921733
   },
   "creationTag": {
     "versionNumber": 0,
