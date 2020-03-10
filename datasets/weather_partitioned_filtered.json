@@ -68,11 +68,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
-      "login": "dlabouesse"
+      "login": "admin"
     },
-    "lastModifiedOn": 1536768740454
+    "lastModifiedOn": 1583862166509
   },
   "creationTag": {
     "versionNumber": 0,
@@ -98,91 +98,91 @@
   "schema": {
     "columns": [
       {
-        "name": "Station",
+        "name": "col_0",
         "type": "string"
       },
       {
-        "name": "Date",
+        "name": "col_1",
         "type": "string"
       },
       {
-        "name": "Tmax",
+        "name": "col_2",
         "type": "string"
       },
       {
-        "name": "Tmin",
+        "name": "col_3",
         "type": "string"
       },
       {
-        "name": "Tavg",
+        "name": "col_4",
         "type": "string"
       },
       {
-        "name": "Depart",
+        "name": "col_5",
         "type": "string"
       },
       {
-        "name": "DewPoint",
+        "name": "col_6",
         "type": "string"
       },
       {
-        "name": "WetBulb",
+        "name": "col_7",
         "type": "string"
       },
       {
-        "name": "Heat",
+        "name": "col_8",
         "type": "string"
       },
       {
-        "name": "Cool",
+        "name": "col_9",
         "type": "string"
       },
       {
-        "name": "Sunrise",
+        "name": "col_10",
         "type": "string"
       },
       {
-        "name": "Sunset",
+        "name": "col_11",
         "type": "string"
       },
       {
-        "name": "CodeSum",
+        "name": "col_12",
         "type": "string"
       },
       {
-        "name": "Depth",
+        "name": "col_13",
         "type": "string"
       },
       {
-        "name": "Water1",
+        "name": "col_14",
         "type": "string"
       },
       {
-        "name": "SnowFall",
+        "name": "col_15",
         "type": "string"
       },
       {
-        "name": "PrecipTotal",
+        "name": "col_16",
         "type": "string"
       },
       {
-        "name": "StnPressure",
+        "name": "col_17",
         "type": "string"
       },
       {
-        "name": "SeaLevel",
+        "name": "col_18",
         "type": "string"
       },
       {
-        "name": "ResultSpeed",
+        "name": "col_19",
         "type": "string"
       },
       {
-        "name": "ResultDir",
+        "name": "col_20",
         "type": "string"
       },
       {
-        "name": "AvgSpeed",
+        "name": "col_21",
         "type": "string"
       }
     ],
@@ -506,5 +506,6 @@
       "partition": "ALL",
       "checks": []
     }
-  }
+  },
+  "customFields": {}
 }
