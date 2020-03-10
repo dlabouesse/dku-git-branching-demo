@@ -2,13 +2,14 @@
   "type": "STANDARD",
   "hasLegacyBackendURL": false,
   "params": {
-    "html": "\u003c!-- Body of your app --\u003e",
-    "css": "body {\n}",
     "backendEnabled": false,
+    "enableJavascriptModules": false,
     "autoStartBackend": false,
+    "hideJSSecurityPanel": false,
     "envSelection": {
       "envMode": "INHERIT"
     },
+    "nbProcesses": 1,
     "libraries": [
       "jquery",
       "dataiku"
@@ -17,16 +18,23 @@
       "containerSelection": {
         "containerMode": "INHERIT"
       },
+      "overrideGlobalK8sExposition": false,
       "exposition": {
         "type": "local_process",
         "params": {}
       },
-      "nbReplicas": 1
+      "scaling": {
+        "initialReplicas": 1,
+        "hpa": false,
+        "hpaTargetCPUPercent": 0,
+        "hpaMinPods": 0,
+        "hpaMaxPods": 0
+      }
     }
   },
   "config": {},
   "name": "test",
-  "apiKey": "PZO9zR5vVASWoSPNqC0zdX4k7rVluloV",
+  "apiKey": "8VYvfmDlyc3nGUy3jN7oJqVrcjpaUiDi",
   "versionTag": {
     "versionNumber": 0,
     "lastModifiedBy": {

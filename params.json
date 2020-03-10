@@ -107,11 +107,18 @@
         "containerSelection": {
           "containerMode": "INHERIT"
         },
+        "overrideGlobalK8sExposition": false,
         "exposition": {
           "type": "local_process",
           "params": {}
         },
-        "nbReplicas": 1
+        "scaling": {
+          "initialReplicas": 1,
+          "hpa": false,
+          "hpaTargetCPUPercent": 0,
+          "hpaMinPods": 0,
+          "hpaMaxPods": 0
+        }
       }
     }
   },
@@ -172,11 +179,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 53,
+    "versionNumber": 54,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1573660466838
+    "lastModifiedOn": 1583838770728
   },
   "creationTag": {
     "versionNumber": 0,
@@ -188,7 +195,8 @@
   "shortDesc": "Project is used for the Azure ML Studio competitor benchmark.\nThe project *Kaggle - West Nile Virus* was created by Dimitri Labouesse on Jun 28th 2018.",
   "tags": [
     "azure poc",
-    "imported"
+    "imported",
+    "duplicated"
   ],
   "customFields": {},
   "checklists": {

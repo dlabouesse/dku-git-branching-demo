@@ -1,5 +1,8 @@
 {
   "tags": {
+    "duplicated": {
+      "color": "#3A85AD"
+    },
     "test2": {
       "color": "#1ac2ab"
     },

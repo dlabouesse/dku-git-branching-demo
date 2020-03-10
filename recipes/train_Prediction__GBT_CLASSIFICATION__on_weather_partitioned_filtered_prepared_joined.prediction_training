@@ -6,6 +6,37 @@
         }, 
         "prediction_type": "BINARY_CLASSIFICATION"
     }, 
+    "generatingModelId": "A-KAGGLEWESTNILEVIRUS-6QZThGRG-vkHC3g9T-s7-pp3-m1", 
+    "splitParams": {
+        "kfold": true, 
+        "splitBeforePrepare": true, 
+        "instanceIdRefresher": 3, 
+        "ttPolicy": "SPLIT_SINGLE_DATASET", 
+        "ssdSplitMode": "RANDOM", 
+        "ssdSelection": {
+            "targetRatio": 0.02, 
+            "maxReadUncompressedBytes": -1, 
+            "ordering": {
+                "rules": [], 
+                "enabled": false
+            }, 
+            "latestPartitionsN": 1, 
+            "filter": {
+                "distinct": false, 
+                "enabled": false
+            }, 
+            "withinFirstN": -1, 
+            "maxRecords": 100000, 
+            "partitionSelectionMethod": "ALL", 
+            "useMemTable": false, 
+            "samplingMethod": "FULL"
+        }, 
+        "subSamplingSeed": 1337, 
+        "ssdSeed": 1337, 
+        "nFolds": 5, 
+        "ssdTrainingRatio": 0.8
+    }, 
+    "backendType": "PY_MEMORY", 
     "script": {
         "maxProcessedMemTableBytes": -1, 
         "sorting": [], 
@@ -51,37 +82,6 @@
         }, 
         "explorationFilters": []
     }, 
-    "splitParams": {
-        "kfold": true, 
-        "splitBeforePrepare": true, 
-        "instanceIdRefresher": 3, 
-        "ttPolicy": "SPLIT_SINGLE_DATASET", 
-        "ssdSplitMode": "RANDOM", 
-        "ssdSelection": {
-            "targetRatio": 0.02, 
-            "maxReadUncompressedBytes": -1, 
-            "ordering": {
-                "rules": [], 
-                "enabled": false
-            }, 
-            "latestPartitionsN": 1, 
-            "filter": {
-                "distinct": false, 
-                "enabled": false
-            }, 
-            "withinFirstN": -1, 
-            "maxRecords": 100000, 
-            "partitionSelectionMethod": "ALL", 
-            "useMemTable": false, 
-            "samplingMethod": "FULL"
-        }, 
-        "subSamplingSeed": 1337, 
-        "ssdSeed": 1337, 
-        "nFolds": 5, 
-        "ssdTrainingRatio": 0.8
-    }, 
-    "generatingModelId": "A-KAGGLEWESTNILEVIRUS-6QZThGRG-vkHC3g9T-s7-pp3-m1", 
-    "backendType": "PY_MEMORY", 
     "sparkParams": {
         "pipelineAllowStart": null, 
         "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK", 
@@ -139,41 +139,41 @@
         "per_feature": {
             "Tavg": {
                 "generate_derivative": false, 
-                "rescaling": "AVGSTD", 
+                "missing_impute_with": "MEAN", 
+                "role": "INPUT", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "numerical_handling": "REGULAR", 
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "LongMeaning"
+                    "recordedMeaning": "LongMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "missing_handling": "IMPUTE", 
-                "quantile_bin_nb_bins": 4, 
                 "binarize_constant_threshold": 0.0, 
-                "role": "INPUT", 
-                "missing_impute_with": "MEAN", 
+                "quantile_bin_nb_bins": 4, 
+                "rescaling": "AVGSTD", 
                 "type": "NUMERIC", 
                 "impute_constant_value": 0.0
             }, 
             "NumMosquitos_sum": {
                 "generate_derivative": false, 
-                "rescaling": "AVGSTD", 
+                "missing_impute_with": "MEAN", 
+                "role": "INPUT", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "numerical_handling": "REGULAR", 
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "LongMeaning"
+                    "recordedMeaning": "LongMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "missing_handling": "IMPUTE", 
-                "quantile_bin_nb_bins": 4, 
                 "binarize_constant_threshold": 0.0, 
-                "role": "INPUT", 
-                "missing_impute_with": "MEAN", 
+                "quantile_bin_nb_bins": 4, 
+                "rescaling": "AVGSTD", 
                 "type": "NUMERIC", 
                 "impute_constant_value": 0.0
             }, 
@@ -184,8 +184,8 @@
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "LongMeaning"
+                    "recordedMeaning": "LongMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "role": "REJECT", 
                 "binarize_constant_threshold": 0.0, 
@@ -196,241 +196,241 @@
             }, 
             "Tmin": {
                 "generate_derivative": false, 
-                "rescaling": "AVGSTD", 
+                "missing_impute_with": "MEAN", 
+                "role": "INPUT", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "numerical_handling": "REGULAR", 
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "LongMeaning"
+                    "recordedMeaning": "LongMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "missing_handling": "IMPUTE", 
-                "quantile_bin_nb_bins": 4, 
                 "binarize_constant_threshold": 0.0, 
-                "role": "INPUT", 
-                "missing_impute_with": "MEAN", 
+                "quantile_bin_nb_bins": 4, 
+                "rescaling": "AVGSTD", 
                 "type": "NUMERIC", 
                 "impute_constant_value": 0.0
             }, 
             "WetBulb": {
                 "generate_derivative": false, 
-                "rescaling": "AVGSTD", 
+                "missing_impute_with": "MEAN", 
+                "role": "INPUT", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "numerical_handling": "REGULAR", 
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "LongMeaning"
+                    "recordedMeaning": "LongMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "missing_handling": "IMPUTE", 
-                "quantile_bin_nb_bins": 4, 
                 "binarize_constant_threshold": 0.0, 
-                "role": "INPUT", 
-                "missing_impute_with": "MEAN", 
+                "quantile_bin_nb_bins": 4, 
+                "rescaling": "AVGSTD", 
                 "type": "NUMERIC", 
                 "impute_constant_value": 0.0
             }, 
             "day_of_year": {
                 "generate_derivative": false, 
-                "rescaling": "AVGSTD", 
+                "missing_impute_with": "MEAN", 
+                "role": "INPUT", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "numerical_handling": "REGULAR", 
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "LongMeaning"
+                    "recordedMeaning": "LongMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "missing_handling": "IMPUTE", 
-                "quantile_bin_nb_bins": 4, 
                 "binarize_constant_threshold": 0.0, 
-                "role": "INPUT", 
-                "missing_impute_with": "MEAN", 
+                "quantile_bin_nb_bins": 4, 
+                "rescaling": "AVGSTD", 
                 "type": "NUMERIC", 
                 "impute_constant_value": 0.0
             }, 
             "Heat": {
                 "generate_derivative": false, 
-                "rescaling": "AVGSTD", 
+                "missing_impute_with": "MEAN", 
+                "role": "INPUT", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "numerical_handling": "REGULAR", 
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "LongMeaning"
+                    "recordedMeaning": "LongMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "missing_handling": "IMPUTE", 
-                "quantile_bin_nb_bins": 4, 
                 "binarize_constant_threshold": 0.0, 
-                "role": "INPUT", 
-                "missing_impute_with": "MEAN", 
+                "quantile_bin_nb_bins": 4, 
+                "rescaling": "AVGSTD", 
                 "type": "NUMERIC", 
                 "impute_constant_value": 0.0
             }, 
             "PrecipTotal": {
                 "generate_derivative": false, 
-                "rescaling": "AVGSTD", 
+                "missing_impute_with": "MEAN", 
+                "role": "INPUT", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "numerical_handling": "REGULAR", 
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "DoubleMeaning"
+                    "recordedMeaning": "DoubleMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "missing_handling": "IMPUTE", 
-                "quantile_bin_nb_bins": 4, 
                 "binarize_constant_threshold": 0.0, 
-                "role": "INPUT", 
-                "missing_impute_with": "MEAN", 
+                "quantile_bin_nb_bins": 4, 
+                "rescaling": "AVGSTD", 
                 "type": "NUMERIC", 
                 "impute_constant_value": 0.0
             }, 
             "Date": {
                 "generate_derivative": false, 
-                "rescaling": "AVGSTD", 
+                "missing_impute_with": "MEAN", 
+                "role": "INPUT", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "numerical_handling": "REGULAR", 
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "Date"
+                    "recordedMeaning": "Date", 
+                    "autoModifiedByDSS": false
                 }, 
                 "missing_handling": "IMPUTE", 
-                "quantile_bin_nb_bins": 4, 
                 "binarize_constant_threshold": 0.0, 
-                "role": "INPUT", 
-                "missing_impute_with": "MEAN", 
+                "quantile_bin_nb_bins": 4, 
+                "rescaling": "AVGSTD", 
                 "type": "NUMERIC", 
                 "impute_constant_value": 0.0
             }, 
             "StnPressure": {
                 "generate_derivative": false, 
-                "rescaling": "AVGSTD", 
+                "missing_impute_with": "MEAN", 
+                "role": "INPUT", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "numerical_handling": "REGULAR", 
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "DoubleMeaning"
+                    "recordedMeaning": "DoubleMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "missing_handling": "IMPUTE", 
-                "quantile_bin_nb_bins": 4, 
                 "binarize_constant_threshold": 0.0, 
-                "role": "INPUT", 
-                "missing_impute_with": "MEAN", 
+                "quantile_bin_nb_bins": 4, 
+                "rescaling": "AVGSTD", 
                 "type": "NUMERIC", 
                 "impute_constant_value": 0.0
             }, 
             "CodeSum": {
-                "min_samples": 10, 
+                "missing_impute_with": "MODE", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "cumulative_proportion": 0.95, 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "Text"
+                    "recordedMeaning": "Text", 
+                    "autoModifiedByDSS": false
                 }, 
                 "role": "INPUT", 
                 "max_nb_categories": 100, 
                 "dummy_clip": "MAX_NB_CATEGORIES", 
                 "missing_handling": "NONE", 
                 "dummy_drop": "NONE", 
-                "missing_impute_with": "MODE", 
+                "min_samples": 10, 
                 "type": "CATEGORY", 
                 "max_cat_safety": 200, 
                 "category_handling": "DUMMIFY"
             }, 
             "ResultDir": {
                 "generate_derivative": false, 
-                "rescaling": "AVGSTD", 
+                "missing_impute_with": "MEAN", 
+                "role": "INPUT", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "numerical_handling": "REGULAR", 
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "LongMeaning"
+                    "recordedMeaning": "LongMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "missing_handling": "IMPUTE", 
-                "quantile_bin_nb_bins": 4, 
                 "binarize_constant_threshold": 0.0, 
-                "role": "INPUT", 
-                "missing_impute_with": "MEAN", 
+                "quantile_bin_nb_bins": 4, 
+                "rescaling": "AVGSTD", 
                 "type": "NUMERIC", 
                 "impute_constant_value": 0.0
             }, 
             "DewPoint": {
                 "generate_derivative": false, 
-                "rescaling": "AVGSTD", 
+                "missing_impute_with": "MEAN", 
+                "role": "INPUT", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "numerical_handling": "REGULAR", 
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "LongMeaning"
+                    "recordedMeaning": "LongMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "missing_handling": "IMPUTE", 
-                "quantile_bin_nb_bins": 4, 
                 "binarize_constant_threshold": 0.0, 
-                "role": "INPUT", 
-                "missing_impute_with": "MEAN", 
+                "quantile_bin_nb_bins": 4, 
+                "rescaling": "AVGSTD", 
                 "type": "NUMERIC", 
                 "impute_constant_value": 0.0
             }, 
             "day_lasting": {
                 "generate_derivative": false, 
-                "rescaling": "AVGSTD", 
+                "missing_impute_with": "MEAN", 
+                "role": "INPUT", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "numerical_handling": "REGULAR", 
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "LongMeaning"
+                    "recordedMeaning": "LongMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "missing_handling": "IMPUTE", 
-                "quantile_bin_nb_bins": 4, 
                 "binarize_constant_threshold": 0.0, 
-                "role": "INPUT", 
-                "missing_impute_with": "MEAN", 
+                "quantile_bin_nb_bins": 4, 
+                "rescaling": "AVGSTD", 
                 "type": "NUMERIC", 
                 "impute_constant_value": 0.0
             }, 
             "Tmax": {
                 "generate_derivative": false, 
-                "rescaling": "AVGSTD", 
+                "missing_impute_with": "MEAN", 
+                "role": "INPUT", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "numerical_handling": "REGULAR", 
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "LongMeaning"
+                    "recordedMeaning": "LongMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "missing_handling": "IMPUTE", 
-                "quantile_bin_nb_bins": 4, 
                 "binarize_constant_threshold": 0.0, 
-                "role": "INPUT", 
-                "missing_impute_with": "MEAN", 
+                "quantile_bin_nb_bins": 4, 
+                "rescaling": "AVGSTD", 
                 "type": "NUMERIC", 
                 "impute_constant_value": 0.0
             }, 
@@ -441,8 +441,8 @@
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "DoubleMeaning"
+                    "recordedMeaning": "DoubleMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "role": "REJECT", 
                 "binarize_constant_threshold": 0.0, 
@@ -452,122 +452,122 @@
                 "impute_constant_value": 0.0
             }, 
             "Trap": {
-                "min_samples": 10, 
+                "missing_impute_with": "MODE", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "cumulative_proportion": 0.95, 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "Text"
+                    "recordedMeaning": "Text", 
+                    "autoModifiedByDSS": false
                 }, 
                 "role": "INPUT", 
                 "max_nb_categories": 100, 
                 "dummy_clip": "MAX_NB_CATEGORIES", 
                 "missing_handling": "NONE", 
                 "dummy_drop": "NONE", 
-                "missing_impute_with": "MODE", 
+                "min_samples": 10, 
                 "type": "CATEGORY", 
                 "max_cat_safety": 200, 
                 "category_handling": "DUMMIFY"
             }, 
             "ResultSpeed": {
                 "generate_derivative": false, 
-                "rescaling": "AVGSTD", 
+                "missing_impute_with": "MEAN", 
+                "role": "INPUT", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "numerical_handling": "REGULAR", 
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "DoubleMeaning"
+                    "recordedMeaning": "DoubleMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "missing_handling": "IMPUTE", 
-                "quantile_bin_nb_bins": 4, 
                 "binarize_constant_threshold": 0.0, 
-                "role": "INPUT", 
-                "missing_impute_with": "MEAN", 
+                "quantile_bin_nb_bins": 4, 
+                "rescaling": "AVGSTD", 
                 "type": "NUMERIC", 
                 "impute_constant_value": 0.0
             }, 
             "Depart": {
                 "generate_derivative": false, 
-                "rescaling": "AVGSTD", 
+                "missing_impute_with": "MEAN", 
+                "role": "INPUT", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "numerical_handling": "REGULAR", 
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "LongMeaning"
+                    "recordedMeaning": "LongMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "missing_handling": "IMPUTE", 
-                "quantile_bin_nb_bins": 4, 
                 "binarize_constant_threshold": 0.0, 
-                "role": "INPUT", 
-                "missing_impute_with": "MEAN", 
+                "quantile_bin_nb_bins": 4, 
+                "rescaling": "AVGSTD", 
                 "type": "NUMERIC", 
                 "impute_constant_value": 0.0
             }, 
             "AvgSpeed": {
                 "generate_derivative": false, 
-                "rescaling": "AVGSTD", 
+                "missing_impute_with": "MEAN", 
+                "role": "INPUT", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "numerical_handling": "REGULAR", 
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "DoubleMeaning"
+                    "recordedMeaning": "DoubleMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "missing_handling": "IMPUTE", 
-                "quantile_bin_nb_bins": 4, 
                 "binarize_constant_threshold": 0.0, 
-                "role": "INPUT", 
-                "missing_impute_with": "MEAN", 
+                "quantile_bin_nb_bins": 4, 
+                "rescaling": "AVGSTD", 
                 "type": "NUMERIC", 
                 "impute_constant_value": 0.0
             }, 
             "GeoPoint": {
-                "min_samples": 10, 
+                "missing_impute_with": "MODE", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "cumulative_proportion": 0.95, 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "GeoPoint"
+                    "recordedMeaning": "GeoPoint", 
+                    "autoModifiedByDSS": false
                 }, 
                 "role": "INPUT", 
                 "max_nb_categories": 100, 
                 "dummy_clip": "MAX_NB_CATEGORIES", 
                 "missing_handling": "NONE", 
                 "dummy_drop": "NONE", 
-                "missing_impute_with": "MODE", 
+                "min_samples": 10, 
                 "type": "CATEGORY", 
                 "max_cat_safety": 200, 
                 "category_handling": "DUMMIFY"
             }, 
             "SeaLevel": {
                 "generate_derivative": false, 
-                "rescaling": "AVGSTD", 
+                "missing_impute_with": "MEAN", 
+                "role": "INPUT", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "numerical_handling": "REGULAR", 
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "DoubleMeaning"
+                    "recordedMeaning": "DoubleMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "missing_handling": "IMPUTE", 
-                "quantile_bin_nb_bins": 4, 
                 "binarize_constant_threshold": 0.0, 
-                "role": "INPUT", 
-                "missing_impute_with": "MEAN", 
+                "quantile_bin_nb_bins": 4, 
+                "rescaling": "AVGSTD", 
                 "type": "NUMERIC", 
                 "impute_constant_value": 0.0
             }, 
@@ -578,8 +578,8 @@
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "LongMeaning"
+                    "recordedMeaning": "LongMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "role": "TARGET", 
                 "binarize_constant_threshold": 0.0, 
@@ -589,45 +589,45 @@
             }, 
             "Species_concat": {
                 "hashSVDHashSize": 200000, 
-                "useCustomVectorizer": false, 
+                "autoReason": "REJECT_DEFAULT_TEXT_HANDLING", 
+                "ngramMinSize": 1, 
                 "customHandlingCode": "", 
                 "hashSVDSVDLimit": 50000, 
                 "customProcessorWantsMatrix": false, 
                 "hashSVDSVDComponents": 100, 
-                "minRowsRatio": 0.001, 
                 "maxWords": 0, 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "FreeText"
+                    "recordedMeaning": "FreeText", 
+                    "autoModifiedByDSS": false
                 }, 
-                "ngramMaxSize": 1, 
-                "text_handling": "TOKENIZE_HASHING_SVD", 
-                "ngramMinSize": 1, 
-                "stopWordsMode": "NONE", 
-                "role": "REJECT", 
-                "autoReason": "REJECT_DEFAULT_TEXT_HANDLING", 
-                "type": "TEXT", 
+                "minRowsRatio": 0.001, 
                 "maxRowsRatio": 0.8, 
+                "useCustomVectorizer": false, 
+                "stopWordsMode": "NONE", 
+                "ngramMaxSize": 1, 
+                "role": "REJECT", 
+                "type": "TEXT", 
+                "text_handling": "TOKENIZE_HASHING_SVD", 
                 "name": "Species_concat"
             }, 
             "Cool": {
                 "generate_derivative": false, 
-                "rescaling": "AVGSTD", 
+                "missing_impute_with": "MEAN", 
+                "role": "INPUT", 
                 "customHandlingCode": "", 
                 "customProcessorWantsMatrix": false, 
                 "numerical_handling": "REGULAR", 
                 "binarize_threshold_mode": "MEDIAN", 
                 "state": {
                     "userModified": false, 
-                    "autoModifiedByDSS": false, 
-                    "recordedMeaning": "LongMeaning"
+                    "recordedMeaning": "LongMeaning", 
+                    "autoModifiedByDSS": false
                 }, 
                 "missing_handling": "IMPUTE", 
-                "quantile_bin_nb_bins": 4, 
                 "binarize_constant_threshold": 0.0, 
-                "role": "INPUT", 
-                "missing_impute_with": "MEAN", 
+                "quantile_bin_nb_bins": 4, 
+                "rescaling": "AVGSTD", 
                 "type": "NUMERIC", 
                 "impute_constant_value": 0.0
             }
@@ -659,56 +659,79 @@
         "envMode": "INHERIT"
     }, 
     "modeling": {
-        "computeLearningCurves": false, 
+        "metrics": {
+            "customEvaluationMetricGIB": true, 
+            "customEvaluationMetricNeedsProba": false, 
+            "thresholdOptimizationMetric": "F1", 
+            "evaluationMetric": "ROC_AUC", 
+            "costMatrixWeights": {
+                "fnGain": 0.0, 
+                "tpGain": 1.0, 
+                "fpGain": -0.3, 
+                "tnGain": 0.0
+            }, 
+            "liftPoint": 0.4
+        }, 
         "algorithm": "GBT_CLASSIFICATION", 
         "grid_search_params": {
             "nIter": 0, 
-            "nJobs": -1, 
+            "splitRatio": 0.8, 
             "randomized": true, 
             "shuffleIterations": 1, 
             "mode": "KFOLD", 
             "timeout": 0, 
-            "splitRatio": 0.8, 
+            "nJobs": -1, 
             "nFolds": 3, 
             "stratified": true
         }, 
         "autoOptimizeThreshold": true, 
         "gridLength": 1, 
-        "metrics": {
-            "customEvaluationMetricGIB": true, 
-            "customEvaluationMetricNeedsProba": false, 
-            "thresholdOptimizationMetric": "F1", 
-            "liftPoint": 0.4, 
-            "costMatrixWeights": {
-                "tpGain": 1.0, 
-                "fnGain": 0.0, 
-                "fpGain": -0.3, 
-                "tnGain": 0.0
-            }, 
-            "evaluationMetric": "ROC_AUC"
-        }, 
+        "computeLearningCurves": false, 
         "forcedClassifierThreshold": 0.0, 
         "gbt_classifier_grid": {
+            "loss": {
+                "values": {
+                    "exponential": {
+                        "enabled": false
+                    }, 
+                    "deviance": {
+                        "enabled": true
+                    }
+                }
+            }, 
             "max_feature_prop": 0.3, 
-            "max_depth": [
-                3
-            ], 
-            "exponential": false, 
-            "deviance": true, 
-            "learning_rate": [
-                0.1
-            ], 
+            "learning_rate": {
+                "gridMode": "EXPLICIT", 
+                "values": [
+                    0.1
+                ]
+            }, 
             "enabled": true, 
-            "min_samples_leaf": [
-                3
-            ], 
-            "n_estimators": [
-                100
-            ], 
-            "max_features": [
-                0
-            ], 
-            "selection_mode": "auto"
+            "min_samples_leaf": {
+                "gridMode": "EXPLICIT", 
+                "values": [
+                    3
+                ]
+            }, 
+            "n_estimators": {
+                "gridMode": "EXPLICIT", 
+                "values": [
+                    100
+                ]
+            }, 
+            "selection_mode": "auto", 
+            "max_features": {
+                "gridMode": "EXPLICIT", 
+                "values": [
+                    0
+                ]
+            }, 
+            "max_depth": {
+                "gridMode": "EXPLICIT", 
+                "values": [
+                    3
+                ]
+            }
         }, 
         "max_ensemble_nodes_serialized": 6000
     }, 
@@ -716,152 +739,152 @@
         "userModified": false, 
         "columns": [
             {
-                "timestampNoTzAsDate": false, 
                 "type": "bigint", 
+                "timestampNoTzAsDate": false, 
                 "name": "Station", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "date", 
+                "timestampNoTzAsDate": false, 
                 "name": "Date", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "bigint", 
+                "timestampNoTzAsDate": false, 
                 "name": "day_of_year", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "bigint", 
+                "timestampNoTzAsDate": false, 
                 "name": "Tmax", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "bigint", 
+                "timestampNoTzAsDate": false, 
                 "name": "Tmin", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "bigint", 
+                "timestampNoTzAsDate": false, 
                 "name": "Tavg", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "bigint", 
+                "timestampNoTzAsDate": false, 
                 "name": "Depart", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "bigint", 
+                "timestampNoTzAsDate": false, 
                 "name": "DewPoint", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "bigint", 
+                "timestampNoTzAsDate": false, 
                 "name": "WetBulb", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "bigint", 
+                "timestampNoTzAsDate": false, 
                 "name": "Heat", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "bigint", 
+                "timestampNoTzAsDate": false, 
                 "name": "Cool", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "bigint", 
+                "timestampNoTzAsDate": false, 
                 "name": "day_lasting", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "string", 
+                "timestampNoTzAsDate": false, 
                 "name": "CodeSum", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "double", 
+                "timestampNoTzAsDate": false, 
                 "name": "SnowFall", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "double", 
+                "timestampNoTzAsDate": false, 
                 "name": "PrecipTotal", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "double", 
+                "timestampNoTzAsDate": false, 
                 "name": "StnPressure", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "double", 
+                "timestampNoTzAsDate": false, 
                 "name": "SeaLevel", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "double", 
+                "timestampNoTzAsDate": false, 
                 "name": "ResultSpeed", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "bigint", 
+                "timestampNoTzAsDate": false, 
                 "name": "ResultDir", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "double", 
+                "timestampNoTzAsDate": false, 
                 "name": "AvgSpeed", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "string", 
+                "timestampNoTzAsDate": false, 
                 "name": "Trap", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "string", 
+                "timestampNoTzAsDate": false, 
                 "name": "GeoPoint", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "string", 
+                "timestampNoTzAsDate": false, 
                 "name": "Species_concat", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "bigint", 
+                "timestampNoTzAsDate": false, 
                 "name": "NumMosquitos_sum", 
                 "maxLength": -1
             }, 
             {
-                "timestampNoTzAsDate": false, 
                 "type": "bigint", 
+                "timestampNoTzAsDate": false, 
                 "name": "WnvPresent_max", 
                 "maxLength": -1
             }
