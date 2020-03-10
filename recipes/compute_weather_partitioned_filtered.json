@@ -66,8 +66,16 @@
     "main": {
       "items": [
         {
-          "ref": "KAGGLEWESTNILEVIRUS.weather_partitioned",
-          "deps": []
+          "ref": "weather_partitioned",
+          "deps": [
+            {
+              "out": "weather_partitioned_filtered",
+              "idim": "date",
+              "odim": "date",
+              "func": "equals",
+              "params": {}
+            }
+          ]
         }
       ]
     }
@@ -83,11 +91,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
-      "login": "dlabouesse"
+      "login": "admin"
     },
-    "lastModifiedOn": 1530295829293
+    "lastModifiedOn": 1583862166630
   },
   "creationTag": {
     "versionNumber": 0,
