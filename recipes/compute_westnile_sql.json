@@ -54,7 +54,7 @@
     "main": {
       "items": [
         {
-          "ref": "westnile",
+          "ref": "KAGGLEWESTNILEVIRUS.westnile",
           "deps": []
         }
       ]

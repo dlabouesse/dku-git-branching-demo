@@ -54,7 +54,7 @@
     "main": {
       "items": [
         {
-          "ref": "WestnileToScore",
+          "ref": "KAGGLEWESTNILEVIRUS.WestnileToScore",
           "deps": []
         }
       ]

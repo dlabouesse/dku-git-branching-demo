@@ -26,15 +26,19 @@
       "sparkSQL": {
         "overwriteOutputSchema": false,
         "useGlobalMetastore": false,
+        "readParams": {
+          "mode": "AUTO",
+          "autoModeRepartitionInto": 10,
+          "map": {}
+        },
         "sparkConfig": {
           "inheritConf": "default",
           "conf": []
         },
-        "readParams": {
-          "map": {}
-        },
+        "executionEngine": "SPARK_SUBMIT",
+        "pipelineAllowStart": true,
         "pipelineAllowMerge": true,
-        "pipelineAllowStart": true
+        "skipPrerunValidate": false
       },
       "impala": {
         "forceStreamMode": true
@@ -45,6 +49,10 @@
         "executionEngine": "HIVESERVER2",
         "addDkuUdf": false,
         "skipPrerunValidate": false
+      },
+      "sqlPipelineParams": {
+        "pipelineAllowStart": true,
+        "pipelineAllowMerge": true
       },
       "lowerCaseSchemaIfEngineRequiresIt": false
     }
@@ -58,16 +66,8 @@
     "main": {
       "items": [
         {
-          "ref": "weather_partitioned",
-          "deps": [
-            {
-              "out": "weather_partitioned_filtered",
-              "idim": "date",
-              "odim": "date",
-              "func": "equals",
-              "params": {}
-            }
-          ]
+          "ref": "KAGGLEWESTNILEVIRUS.weather_partitioned",
+          "deps": []
         }
       ]
     }
@@ -97,6 +97,7 @@
     "lastModifiedOn": 1530289014476
   },
   "tags": [],
+  "customFields": {},
   "checklists": {
     "checklists": []
   }

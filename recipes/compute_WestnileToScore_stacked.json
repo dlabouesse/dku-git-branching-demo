@@ -11,11 +11,11 @@
     "main": {
       "items": [
         {
-          "ref": "WestnileToScore",
+          "ref": "KAGGLEWESTNILEVIRUS.WestnileToScore",
           "deps": []
         },
         {
-          "ref": "westnile",
+          "ref": "KAGGLEWESTNILEVIRUS.westnile",
           "deps": []
         }
       ]

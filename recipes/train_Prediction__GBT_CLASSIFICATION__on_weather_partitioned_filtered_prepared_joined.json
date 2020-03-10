@@ -1,55 +1,60 @@
 {
-  "checklists": {
-    "checklists": []
-  }, 
-  "creationTag": {
-    "lastModifiedBy": {
-      "login": "dlabouesse"
-    }, 
-    "lastModifiedOn": 1530295580950, 
-    "versionNumber": 0
-  }, 
+  "type": "prediction_training",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
   "customMeta": {
     "kv": {}
-  }, 
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
   "inputs": {
     "main": {
       "items": [
         {
+          "ref": "weather_partitioned_filtered_prepared_joined",
           "deps": [
             {
-              "func": "all_available", 
-              "idim": "date", 
+              "idim": "date",
+              "func": "all_available",
               "params": {}
             }
-          ], 
-          "ref": "weather_partitioned_filtered_prepared_joined"
+          ]
         }
       ]
     }
-  }, 
-  "maxRunningActivities": 0, 
-  "neverRecomputeExistingPartitions": false, 
-  "optionalDependencies": false, 
+  },
   "outputs": {
     "main": {
       "items": [
         {
-          "appendMode": false, 
-          "ref": "1fWtaD0A"
+          "ref": "1fWtaD0A",
+          "appendMode": false
         }
       ]
     }
-  }, 
-  "params": {}, 
-  "redispatchPartitioning": false, 
-  "tags": [], 
-  "type": "prediction_training", 
+  },
   "versionTag": {
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dlabouesse"
-    }, 
-    "lastModifiedOn": 1530713558459, 
-    "versionNumber": 3
+    },
+    "lastModifiedOn": 1530713558459
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dlabouesse"
+    },
+    "lastModifiedOn": 1530295580950
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
   }
 }
