@@ -15,7 +15,7 @@
           "deps": []
         },
         {
-          "ref": "westnile",
+          "ref": "westnile_sql",
           "deps": []
         }
       ]
@@ -32,11 +32,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583861921733
+    "lastModifiedOn": 1583862277734
   },
   "creationTag": {
     "versionNumber": 0,

@@ -50,7 +50,7 @@
     },
     {
       "preFilter": {},
-      "originLabel": "westnile",
+      "originLabel": "westnile_sql",
       "index": 1
     }
   ],
