@@ -102,20 +102,6 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
-      "type": "RegexpExtractor",
-      "params": {
-        "found_col": false,
-        "extractAllOccurrences": false,
-        "prefix": "Sunrise_",
-        "column": "Sunrise",
-        "pattern": "(\\d{2})(\\d{2})"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "Sunset_1*60+Sunset_2-(Sunrise_1*60+Sunrise_2)",
