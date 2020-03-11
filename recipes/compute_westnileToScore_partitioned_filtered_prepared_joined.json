@@ -69,10 +69,8 @@
           "ref": "weather_partitioned_filtered_prepared_joined",
           "deps": [
             {
-              "out": "westnileToScore_partitioned_filtered_prepared_joined",
-              "idim": "date",
-              "odim": "date",
-              "func": "equals",
+              "idim": "Date_partitioning",
+              "func": "all_available",
               "params": {}
             }
           ]
@@ -91,11 +89,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "dlabouesse"
+      "login": "admin"
     },
-    "lastModifiedOn": 1530713653014
+    "lastModifiedOn": 1583932393371
   },
   "creationTag": {
     "versionNumber": 0,
