@@ -59,7 +59,7 @@
     "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": [
       {
-        "name": "date",
+        "name": "Date_partitioning",
         "params": {
           "period": "MONTH"
         },
@@ -68,11 +68,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
-      "login": "dlabouesse"
+      "login": "admin"
     },
-    "lastModifiedOn": 1570550968972
+    "lastModifiedOn": 1583932424364
   },
   "creationTag": {
     "versionNumber": 0,
