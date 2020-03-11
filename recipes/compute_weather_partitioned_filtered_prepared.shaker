@@ -105,7 +105,7 @@
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "Sunset_1*60+Sunset_2-(Sunrise_1*60+Sunrise_2)",
-        "column": "day_lasting"
+        "column": "day_length"
       },
       "alwaysShowComment": false
     },
