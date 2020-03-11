@@ -3,17 +3,68 @@
     "envMode": "INHERIT"
   },
   "core": {
+    "taskType": "PREDICTION",
+    "executionParams": {
+      "envSelection": {
+        "envMode": "INHERIT"
+      },
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      },
+      "sparkParams": {
+        "pipelineAllowMerge": true,
+        "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
+        "pipelineAllowStart": true,
+        "sparkExecutionEngine": "SPARK_SUBMIT",
+        "sparkConf": {
+          "inheritConf": "default",
+          "conf": []
+        },
+        "sparkRepartitionNonHDFS": 1,
+        "sparkUseGlobalMetastore": false
+      },
+      "sparkCheckpoint": "NONE"
+    },
+    "backendType": "PY_MEMORY",
     "target_variable": "WnvPresent_max",
     "weight": {
       "weightMethod": "CLASS_WEIGHT"
     },
+    "time": {
+      "ascending": true,
+      "enabled": false
+    },
+    "partitionedModel": {
+      "ssdSelection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "latestPartitionsN": 1,
+        "maxRecords": -1,
+        "ordering": {
+          "rules": [],
+          "enabled": false
+        },
+        "withinFirstN": -1,
+        "partitionSelectionMethod": "ALL",
+        "targetRatio": 0.02,
+        "maxReadUncompressedBytes": -1,
+        "samplingMethod": "FULL"
+      },
+      "enabled": false
+    },
+    "calibration": {
+      "calibrationMethod": "NO_CALIBRATION"
+    },
     "prediction_type": "BINARY_CLASSIFICATION"
   },
   "operationMode": "TRAIN_KFOLD",
-  "generatingModelId": "A-KAGGLEWESTNILEVIRUS-6QZThGRG-vkHC3g9T-s7-pp3-m1",
   "modeling": {
     "computeLearningCurves": false,
     "max_ensemble_nodes_serialized": 6000,
+    "pluginAlgoCustomGridSearch": false,
     "metrics": {
       "customEvaluationMetricGIB": true,
       "costMatrixWeights": {
@@ -27,19 +78,6 @@
       "customEvaluationMetricNeedsProba": false,
       "thresholdOptimizationMetric": "F1"
     },
-    "grid_search_params": {
-      "mode": "KFOLD",
-      "nJobs": -1,
-      "nIter": 0,
-      "nFolds": 3,
-      "stratified": true,
-      "randomized": true,
-      "shuffleIterations": 1,
-      "splitRatio": 0.8,
-      "timeout": 0
-    },
-    "autoOptimizeThreshold": true,
-    "forcedClassifierThreshold": 0.0,
     "gbt_classifier_grid": {
       "loss": {
         "values": {
@@ -51,23 +89,26 @@
           }
         }
       },
-      "max_feature_prop": 0.3,
       "max_features": {
         "values": [
           0
         ],
+        "nValues": 0,
         "gridMode": "EXPLICIT"
       },
+      "max_feature_prop": 0.3,
       "max_depth": {
         "values": [
           3
         ],
+        "nValues": 0,
         "gridMode": "EXPLICIT"
       },
       "n_estimators": {
         "values": [
           100
         ],
+        "nValues": 0,
         "gridMode": "EXPLICIT"
       },
       "selection_mode": "auto",
@@ -75,6 +116,7 @@
         "values": [
           0.1
         ],
+        "nValues": 0,
         "gridMode": "EXPLICIT"
       },
       "enabled": true,
@@ -82,12 +124,30 @@
         "values": [
           3
         ],
+        "nValues": 0,
         "gridMode": "EXPLICIT"
       }
     },
+    "autoOptimizeThreshold": true,
+    "forcedClassifierThreshold": 0.0,
+    "grid_search_params": {
+      "mode": "KFOLD",
+      "nJobs": -1,
+      "nFolds": 3,
+      "nIter": 0,
+      "stratified": true,
+      "strategy": "GRID",
+      "shuffleIterations": 1,
+      "randomized": true,
+      "splitRatio": 0.8,
+      "timeout": 0
+    },
+    "skipExpensiveReports": false,
     "algorithm": "GBT_CLASSIFICATION",
     "gridLength": 1
   },
+  "partSource": "ACTIVE_VERSION",
+  "generatingModelId": "A-GITBRANCHINGDEMO-6QZThGRG-vkHC3g9T-s10-pp3-m1",
   "preprocessing": {
     "reduce": {
       "kept_variance": 0.0,
@@ -110,6 +170,7 @@
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "INPUT",
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "type": "NUMERIC",
@@ -133,6 +194,7 @@
         "dummy_drop": "NONE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
+        "sendToInput": "main",
         "customHandlingCode": "",
         "type": "CATEGORY",
         "customProcessorWantsMatrix": false,
@@ -149,7 +211,8 @@
       "NumMosquitos_sum": {
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
-        "role": "INPUT",
+        "role": "REJECT",
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "type": "NUMERIC",
@@ -170,6 +233,7 @@
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "INPUT",
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "type": "NUMERIC",
@@ -190,6 +254,7 @@
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "INPUT",
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "type": "NUMERIC",
@@ -210,6 +275,7 @@
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "INPUT",
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "type": "NUMERIC",
@@ -230,6 +296,7 @@
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "INPUT",
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "type": "NUMERIC",
@@ -250,6 +317,7 @@
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "INPUT",
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "type": "NUMERIC",
@@ -273,6 +341,7 @@
         "dummy_drop": "NONE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
+        "sendToInput": "main",
         "customHandlingCode": "",
         "type": "CATEGORY",
         "customProcessorWantsMatrix": false,
@@ -286,10 +355,11 @@
         "max_nb_categories": 100,
         "max_cat_safety": 200
       },
-      "day_lasting": {
+      "newcolumn_expression": {
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "INPUT",
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "type": "NUMERIC",
@@ -306,6 +376,44 @@
         },
         "impute_constant_value": 0.0
       },
+      "day_lasting": {
+        "min_samples": 10,
+        "missing_impute_with": "MODE",
+        "role": "REJECT",
+        "dummy_drop": "NONE",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "type": "CATEGORY",
+        "autoReason": "REJECT_MISSING",
+        "customProcessorWantsMatrix": false,
+        "missing_handling": "NONE",
+        "category_handling": "DUMMIFY",
+        "state": {
+          "autoModifiedByDSS": true,
+          "recordedMeaning": "Text",
+          "previousSettings": {
+            "rescaling": "AVGSTD",
+            "missing_impute_with": "MEAN",
+            "role": "INPUT",
+            "sendToInput": "main",
+            "customHandlingCode": "",
+            "binarize_constant_threshold": 0.0,
+            "type": "NUMERIC",
+            "binarize_threshold_mode": "MEDIAN",
+            "customProcessorWantsMatrix": false,
+            "quantile_bin_nb_bins": 4,
+            "generate_derivative": false,
+            "missing_handling": "IMPUTE",
+            "numerical_handling": "REGULAR",
+            "impute_constant_value": 0.0
+          },
+          "userModified": false
+        },
+        "max_nb_categories": 100,
+        "max_cat_safety": 200
+      },
       "Trap": {
         "min_samples": 10,
         "missing_impute_with": "MODE",
@@ -313,6 +421,7 @@
         "dummy_drop": "NONE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
+        "sendToInput": "main",
         "customHandlingCode": "",
         "type": "CATEGORY",
         "customProcessorWantsMatrix": false,
@@ -330,6 +439,7 @@
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "INPUT",
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "type": "NUMERIC",
@@ -350,6 +460,7 @@
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "INPUT",
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "type": "NUMERIC",
@@ -370,6 +481,7 @@
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "INPUT",
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "type": "NUMERIC",
@@ -390,6 +502,7 @@
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "INPUT",
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "type": "NUMERIC",
@@ -410,6 +523,7 @@
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "INPUT",
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "type": "NUMERIC",
@@ -435,6 +549,7 @@
         "stopWordsMode": "NONE",
         "maxWords": 0,
         "useCustomVectorizer": false,
+        "sendToInput": "main",
         "customHandlingCode": "",
         "type": "TEXT",
         "autoReason": "REJECT_DEFAULT_TEXT_HANDLING",
@@ -451,11 +566,12 @@
         }
       },
       "Station": {
-        "customProcessorWantsMatrix": false,
         "autoReason": "REJECT_ZERO_VARIANCE",
-        "role": "REJECT",
+        "customProcessorWantsMatrix": false,
         "quantile_bin_nb_bins": 4,
+        "role": "REJECT",
         "generate_derivative": false,
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "state": {
@@ -471,6 +587,7 @@
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "INPUT",
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "type": "NUMERIC",
@@ -491,6 +608,7 @@
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "INPUT",
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "type": "NUMERIC",
@@ -511,6 +629,7 @@
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "INPUT",
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "type": "NUMERIC",
@@ -531,6 +650,7 @@
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "INPUT",
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "type": "NUMERIC",
@@ -548,11 +668,12 @@
         "impute_constant_value": 0.0
       },
       "SnowFall": {
-        "customProcessorWantsMatrix": false,
         "autoReason": "REJECT_ZERO_VARIANCE",
-        "role": "REJECT",
+        "customProcessorWantsMatrix": false,
         "quantile_bin_nb_bins": 4,
+        "role": "REJECT",
         "generate_derivative": false,
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "state": {
@@ -566,9 +687,10 @@
       },
       "WnvPresent_max": {
         "customProcessorWantsMatrix": false,
-        "role": "TARGET",
         "quantile_bin_nb_bins": 4,
+        "role": "TARGET",
         "generate_derivative": false,
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "state": {
@@ -584,6 +706,7 @@
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
         "role": "INPUT",
+        "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
         "type": "NUMERIC",
@@ -609,28 +732,30 @@
       "manual_interactions": {
         "interactions": []
       },
-      "categoricals_count_transformer": {
-        "all_features": false,
-        "input_features": [],
-        "behavior": "DISABLED"
-      },
       "numericals_clustering": {
         "all_features": false,
         "input_features": [],
         "k": 0,
         "behavior": "DISABLED"
       },
+      "categoricals_count_transformer": {
+        "all_features": false,
+        "input_features": [],
+        "behavior": "DISABLED"
+      },
       "pairwise_linear": {
         "behavior": "DISABLED"
       }
     },
+    "preprocessingFitSampleRatio": 1.0,
+    "preprocessingFitSampleSeed": 1337,
     "feature_selection_params": {
+      "pca_params": {
+        "n_features": 25,
+        "variance_proportion": 0.9
+      },
       "custom_params": {
         "code": "# type your code here"
-      },
-      "pca_params": {
-        "variance_proportion": 0.9,
-        "n_features": 25
       },
       "method": "NONE",
       "correlation_params": {
@@ -658,171 +783,126 @@
   "expectedPreparationOutputSchema": {
     "columns": [
       {
-        "timestampNoTzAsDate": false,
         "name": "Station",
-        "type": "bigint",
-        "maxLength": -1
+        "type": "bigint"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "Date",
-        "type": "date",
-        "maxLength": -1
+        "type": "date"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "day_of_year",
-        "type": "bigint",
-        "maxLength": -1
+        "type": "bigint"
       },
       {
-        "timestampNoTzAsDate": false,
+        "name": "newcolumn_expression",
+        "type": "bigint"
+      },
+      {
         "name": "Tmax",
-        "type": "bigint",
-        "maxLength": -1
+        "type": "bigint"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "Tmin",
-        "type": "bigint",
-        "maxLength": -1
+        "type": "bigint"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "Tavg",
-        "type": "bigint",
-        "maxLength": -1
+        "type": "bigint"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "Depart",
-        "type": "bigint",
-        "maxLength": -1
+        "type": "bigint"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "DewPoint",
-        "type": "bigint",
-        "maxLength": -1
+        "type": "bigint"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "WetBulb",
-        "type": "bigint",
-        "maxLength": -1
+        "type": "bigint"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "Heat",
-        "type": "bigint",
-        "maxLength": -1
+        "type": "bigint"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "Cool",
-        "type": "bigint",
-        "maxLength": -1
+        "type": "bigint"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "day_lasting",
-        "type": "bigint",
-        "maxLength": -1
+        "type": "string"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "CodeSum",
-        "type": "string",
-        "maxLength": -1
+        "type": "string"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "SnowFall",
-        "type": "double",
-        "maxLength": -1
+        "type": "double"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "PrecipTotal",
-        "type": "double",
-        "maxLength": -1
+        "type": "double"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "StnPressure",
-        "type": "double",
-        "maxLength": -1
+        "type": "double"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "SeaLevel",
-        "type": "double",
-        "maxLength": -1
+        "type": "double"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "ResultSpeed",
-        "type": "double",
-        "maxLength": -1
+        "type": "double"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "ResultDir",
-        "type": "bigint",
-        "maxLength": -1
+        "type": "bigint"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "AvgSpeed",
-        "type": "double",
-        "maxLength": -1
+        "type": "double"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "Trap",
-        "type": "string",
-        "maxLength": -1
+        "type": "string"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "GeoPoint",
-        "type": "string",
-        "maxLength": -1
+        "type": "string"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "Species_concat",
-        "type": "string",
-        "maxLength": -1
+        "type": "string"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "NumMosquitos_sum",
-        "type": "bigint",
-        "maxLength": -1
+        "type": "bigint"
       },
       {
-        "timestampNoTzAsDate": false,
         "name": "WnvPresent_max",
-        "type": "bigint",
-        "maxLength": -1
+        "type": "bigint"
       }
     ],
     "userModified": false
   },
   "splitParams": {
-    "instanceIdRefresher": 3,
+    "testOnLargerValues": true,
+    "instanceIdRefresher": 4,
     "ssdSeed": 1337,
     "nFolds": 5,
     "subSamplingSeed": 1337,
-    "splitBeforePrepare": true,
     "ssdSplitMode": "RANDOM",
+    "splitBeforePrepare": true,
     "ssdSelection": {
+      "useMemTable": false,
       "filter": {
         "distinct": false,
         "enabled": false
       },
-      "useMemTable": false,
       "latestPartitionsN": 1,
       "maxRecords": 100000,
       "ordering": {
@@ -836,11 +916,11 @@
       "samplingMethod": "FULL"
     },
     "ssdTrainingRatio": 0.8,
-    "kfold": true,
-    "ttPolicy": "SPLIT_SINGLE_DATASET"
+    "ttPolicy": "SPLIT_SINGLE_DATASET",
+    "kfold": true
   },
   "script": {
-    "contextProjectKey": "KAGGLEWESTNILEVIRUS",
+    "contextProjectKey": "GITBRANCHINGDEMO",
     "columnsSelection": {
       "mode": "ALL"
     },
@@ -867,15 +947,30 @@
       "autoRefreshSample": false
     },
     "explorationFilters": [],
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "steps": [
+      {
+        "preview": true,
+        "metaType": "PROCESSOR",
+        "disabled": false,
+        "type": "CreateColumnWithGREL",
+        "params": {
+          "expression": "day_of_year*12",
+          "column": "newcolumn_expression"
+        },
+        "alwaysShowComment": false
+      }
+    ],
     "maxProcessedMemTableBytes": -1,
-    "steps": [],
     "previewMode": "ALL_ROWS",
     "vizSampling": {
       "_refreshTrigger": 0,
       "autoRefreshSample": false
     },
     "analysisColumnData": {},
+    "columnWidthsByName": {},
     "sorting": [],
     "globalSearchQuery": "",
     "coloring": {
@@ -885,7 +980,15 @@
     }
   },
   "sparkParams": {
+    "pipelineAllowMerge": true,
     "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
-    "sparkRepartitionNonHDFS": 1
+    "pipelineAllowStart": true,
+    "sparkExecutionEngine": "SPARK_SUBMIT",
+    "sparkConf": {
+      "inheritConf": "default",
+      "conf": []
+    },
+    "sparkRepartitionNonHDFS": 1,
+    "sparkUseGlobalMetastore": false
   }
 }
