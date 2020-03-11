@@ -9,6 +9,7 @@
     "test3": {
       "color": "#0f6d82"
     },
+    "deleted-recipe-editor": {},
     "test": {
       "color": "#123883"
     },
@@ -20,7 +21,6 @@
     },
     "azure poc": {
       "color": "#77bec2"
-    },
-    "deleted-recipe-editor": {}
+    }
   }
 }
