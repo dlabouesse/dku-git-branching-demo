@@ -66,11 +66,11 @@
     "main": {
       "items": [
         {
-          "ref": "weather_partitioned",
+          "ref": "weather_partitioned_tmp",
           "deps": [
             {
               "out": "weather_partitioned_filtered",
-              "idim": "date",
+              "idim": "Date",
               "odim": "date",
               "func": "equals",
               "params": {}
@@ -91,11 +91,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 18,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583862166630
+    "lastModifiedOn": 1583931138538
   },
   "creationTag": {
     "versionNumber": 0,
