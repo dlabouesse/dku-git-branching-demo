@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
-      "login": "dlabouesse"
+      "login": "admin"
     },
-    "lastModifiedOn": 1530290938776
+    "lastModifiedOn": 1583936281210
   },
   "creationTag": {
     "versionNumber": 0,
@@ -87,57 +87,37 @@
     }
   },
   "schema": {
-    "userModified": true,
     "columns": [
       {
         "name": "Date",
-        "type": "date",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "date"
       },
       {
         "name": "Address",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Species",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Trap",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "AddressAccuracy",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "NumMosquitos",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "WnvPresent",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "GeoPoint",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       }
-    ]
+    ],
+    "userModified": true
   },
   "metrics": {
     "probes": [
@@ -214,5 +194,6 @@
     "displayedState": {
       "checks": []
     }
-  }
+  },
+  "customFields": {}
 }
