@@ -19,8 +19,10 @@
           "ref": "westnileToScore_partitioned_filtered_prepared_joined",
           "deps": [
             {
+              "out": "westnileToScore_partitioned_filtered_prepared_joined_scored",
               "idim": "Date_partitioning",
-              "func": "all_available",
+              "odim": "Date_partitioning",
+              "func": "equals",
               "params": {}
             }
           ]
@@ -47,11 +49,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583932405484
+    "lastModifiedOn": 1583932815384
   },
   "creationTag": {
     "versionNumber": 0,
