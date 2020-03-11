@@ -48,7 +48,7 @@
   "customMeta": {
     "kv": {}
   },
-  "redispatchPartitioning": false,
+  "redispatchPartitioning": true,
   "maxRunningActivities": 0,
   "inputs": {
     "main": {
@@ -71,11 +71,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583931688028
+    "lastModifiedOn": 1583931748782
   },
   "creationTag": {
     "versionNumber": 0,
