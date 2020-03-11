@@ -1,22 +1,22 @@
 {
-    "outputProbaPercentiles": false, 
-    "keptInputColumns": [], 
-    "overrideModelSpecifiedThreshold": false, 
-    "backendType": "PY_MEMORY", 
-    "filterInputColumns": false, 
-    "sparkParams": {
-        "pipelineAllowStart": true, 
-        "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK", 
-        "sparkConf": {
-            "conf": []
-        }, 
-        "sparkRepartitionNonHDFS": 1, 
-        "pipelineAllowMerge": true
-    }, 
-    "outputProbabilities": true, 
-    "forcedClassifierThreshold": 0, 
-    "envSelection": {
-        "envMode": "INHERIT"
-    }, 
-    "forceOriginalEngine": false
+  "keptInputColumns": [],
+  "envSelection": {
+    "envMode": "INHERIT"
+  },
+  "backendType": "PY_MEMORY",
+  "filterInputColumns": false,
+  "outputProbaPercentiles": false,
+  "outputProbabilities": true,
+  "forceOriginalEngine": false,
+  "forcedClassifierThreshold": 0,
+  "overrideModelSpecifiedThreshold": false,
+  "sparkParams": {
+    "pipelineAllowMerge": true,
+    "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
+    "pipelineAllowStart": true,
+    "sparkConf": {
+      "conf": []
+    },
+    "sparkRepartitionNonHDFS": 1
+  }
 }
