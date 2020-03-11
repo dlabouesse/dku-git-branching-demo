@@ -3,7 +3,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "Prediction (XGBOOST_CLASSIFICATION) on weather_partitioned_filtered_prepared_joined_prepared",
   "contentType": "prediction/py_memory",
-  "activeVersion": "initial",
+  "activeVersion": "1583948389570",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -15,7 +15,7 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
-  "lastExportedFrom": "A-GITBRANCHINGDEMO-1xFqfNfj-BTUFBad7-s1-pp5-m1",
+  "lastExportedFrom": "A-GITBRANCHINGDEMO-1xFqfNfj-BTUFBad7-s2-pp3-m1",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -1088,11 +1088,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583937200937
+    "lastModifiedOn": 1583948389680
   },
   "creationTag": {
     "versionNumber": 0,

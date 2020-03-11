@@ -63,7 +63,7 @@
   "operationMode": "TRAIN_KFOLD",
   "modeling": {
     "computeLearningCurves": false,
-    "max_ensemble_nodes_serialized": 0,
+    "max_ensemble_nodes_serialized": 6000,
     "pluginAlgoCustomGridSearch": false,
     "metrics": {
       "customEvaluationMetricGIB": true,
@@ -77,6 +77,56 @@
       "evaluationMetric": "ROC_AUC",
       "customEvaluationMetricNeedsProba": false,
       "thresholdOptimizationMetric": "F1"
+    },
+    "gbt_classifier_grid": {
+      "loss": {
+        "values": {
+          "exponential": {
+            "enabled": false
+          },
+          "deviance": {
+            "enabled": true
+          }
+        }
+      },
+      "max_features": {
+        "values": [
+          0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "max_feature_prop": 0.3,
+      "max_depth": {
+        "values": [
+          3
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "n_estimators": {
+        "values": [
+          100
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "selection_mode": "auto",
+      "learning_rate": {
+        "values": [
+          0.1
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "enabled": true,
+      "min_samples_leaf": {
+        "values": [
+          3
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      }
     },
     "autoOptimizeThreshold": true,
     "forcedClassifierThreshold": 0.0,
@@ -93,135 +143,11 @@
       "timeout": 0
     },
     "skipExpensiveReports": false,
-    "xgboost_grid": {
-      "scale_pos_weight": 1.0,
-      "base_score": 0.5,
-      "seed": 1337,
-      "enable_early_stopping": true,
-      "max_depth": {
-        "values": [
-          1,
-          2,
-          3,
-          5,
-          10
-        ],
-        "nValues": 0,
-        "gridMode": "EXPLICIT"
-      },
-      "n_estimators": 300,
-      "enabled": true,
-      "booster": {
-        "values": {
-          "dart": {
-            "enabled": false
-          },
-          "gbtree": {
-            "enabled": true
-          }
-        }
-      },
-      "objective": {
-        "values": {
-          "reg_logistic": {
-            "enabled": false
-          },
-          "reg_linear": {
-            "enabled": true
-          },
-          "binary_logistic": {
-            "enabled": false
-          },
-          "reg_gamma": {
-            "enabled": false
-          },
-          "multi_softprob": {
-            "enabled": false
-          }
-        }
-      },
-      "lambda": {
-        "values": [
-          1.0
-        ],
-        "nValues": 0,
-        "gridMode": "EXPLICIT"
-      },
-      "impute_missing": false,
-      "alpha": {
-        "values": [
-          0.0
-        ],
-        "nValues": 0,
-        "gridMode": "EXPLICIT"
-      },
-      "missing": 0.0,
-      "cpu_tree_method": "auto",
-      "min_child_weight": {
-        "values": [
-          0.0
-        ],
-        "nValues": 0,
-        "gridMode": "EXPLICIT"
-      },
-      "max_delta_step": {
-        "values": [
-          0.0
-        ],
-        "nValues": 0,
-        "gridMode": "EXPLICIT"
-      },
-      "colsample_bytree": {
-        "values": [
-          0.75,
-          1.0
-        ],
-        "nValues": 0,
-        "gridMode": "EXPLICIT"
-      },
-      "enable_cuda": false,
-      "early_stopping_rounds": 4,
-      "gpu_tree_method": "gpu_exact",
-      "nthread": 4,
-      "subsample": {
-        "values": [
-          0.75,
-          1.0
-        ],
-        "nValues": 0,
-        "gridMode": "EXPLICIT"
-      },
-      "colsample_bylevel": {
-        "values": [
-          1.0
-        ],
-        "nValues": 0,
-        "gridMode": "EXPLICIT"
-      },
-      "learning_rate": {
-        "values": [
-          0.01,
-          0.05,
-          0.1,
-          0.3,
-          0.5
-        ],
-        "nValues": 0,
-        "gridMode": "EXPLICIT"
-      },
-      "gamma": {
-        "values": [
-          0.0
-        ],
-        "nValues": 0,
-        "gridMode": "EXPLICIT"
-      }
-    },
-    "algorithm": "XGBOOST_CLASSIFICATION",
-    "gridLength": 100
+    "algorithm": "GBT_CLASSIFICATION",
+    "gridLength": 1
   },
   "partSource": "ACTIVE_VERSION",
-  "generatingModelId": "A-GITBRANCHINGDEMO-1xFqfNfj-BTUFBad7-s1-pp5-m1",
+  "generatingModelId": "A-GITBRANCHINGDEMO-1xFqfNfj-BTUFBad7-s2-pp3-m1",
   "preprocessing": {
     "reduce": {
       "kept_variance": 0.0,
@@ -450,6 +376,44 @@
         },
         "impute_constant_value": 0.0
       },
+      "day_length": {
+        "rescaling": "AVGSTD",
+        "missing_impute_with": "MEAN",
+        "role": "INPUT",
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "binarize_constant_threshold": 0.0,
+        "type": "NUMERIC",
+        "binarize_threshold_mode": "MEDIAN",
+        "customProcessorWantsMatrix": false,
+        "quantile_bin_nb_bins": 4,
+        "generate_derivative": false,
+        "missing_handling": "IMPUTE",
+        "numerical_handling": "REGULAR",
+        "state": {
+          "autoModifiedByDSS": true,
+          "recordedMeaning": "LongMeaning",
+          "previousSettings": {
+            "min_samples": 10,
+            "missing_impute_with": "MODE",
+            "role": "REJECT",
+            "dummy_drop": "NONE",
+            "dummy_clip": "MAX_NB_CATEGORIES",
+            "cumulative_proportion": 0.95,
+            "sendToInput": "main",
+            "customHandlingCode": "",
+            "type": "CATEGORY",
+            "autoReason": "REJECT_MISSING",
+            "customProcessorWantsMatrix": false,
+            "missing_handling": "NONE",
+            "category_handling": "DUMMIFY",
+            "max_nb_categories": 100,
+            "max_cat_safety": 200
+          },
+          "userModified": false
+        },
+        "impute_constant_value": 0.0
+      },
       "day_of_year": {
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
@@ -481,28 +445,6 @@
         "sendToInput": "main",
         "customHandlingCode": "",
         "type": "CATEGORY",
-        "customProcessorWantsMatrix": false,
-        "missing_handling": "NONE",
-        "category_handling": "DUMMIFY",
-        "state": {
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "Text",
-          "userModified": false
-        },
-        "max_nb_categories": 100,
-        "max_cat_safety": 200
-      },
-      "day_lasting": {
-        "min_samples": 10,
-        "missing_impute_with": "MODE",
-        "role": "REJECT",
-        "dummy_drop": "NONE",
-        "dummy_clip": "MAX_NB_CATEGORIES",
-        "cumulative_proportion": 0.95,
-        "sendToInput": "main",
-        "customHandlingCode": "",
-        "type": "CATEGORY",
-        "autoReason": "REJECT_MISSING",
         "customProcessorWantsMatrix": false,
         "missing_handling": "NONE",
         "category_handling": "DUMMIFY",
@@ -986,8 +928,8 @@
         "type": "bigint"
       },
       {
-        "name": "day_lasting",
-        "type": "string"
+        "name": "day_length",
+        "type": "bigint"
       },
       {
         "name": "CodeSum",
@@ -1099,6 +1041,7 @@
     "kfold": true
   },
   "script": {
+    "contextProjectKey": "GITBRANCHINGDEMO",
     "columnsSelection": {
       "mode": "ALL"
     },
