@@ -5,11 +5,11 @@
   "name": "rebuild flow",
   "active": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583938366428
+    "lastModifiedOn": 1583938516074
   },
   "checklists": {
     "checklists": []
@@ -23,7 +23,60 @@
   "triggers": [],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "build_0_true_d_weather_partitioned_filtered_prepared_joined_prepared",
+        "type": "build_flowitem",
+        "name": "Step #1",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "weather_partitioned_filtered_prepared_joined_prepared",
+              "partitionsSpec": "2007-05,2007-06,2007-07,2007-08,2007-09,2007-10,2008-05,2008-06,2008-07,2008-08,2008-09,2008-10,2009-05,2009-06,2009-07,2009-08,2009-09,2009-10,2010-05,2010-06,2010-07,2010-08,2010-09,2010-10,2011-05,2011-06,2011-07,2011-08,2011-09,2011-10,2012-05,2012-06,2012-07,2012-08,2012-09,2012-10,2013-05,2013-06,2013-07,2013-08,2013-09,2013-10,2014-05,2014-06,2014-07,2014-08,2014-09,2014-10"
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "build_0_true_d_westnileScored",
+        "type": "build_flowitem",
+        "name": "Step #2",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "westnileScored",
+              "partitionsSpec": "2007-05,2007-06,2007-07,2007-08,2007-09,2007-10,2008-05,2008-06,2008-07,2008-08,2008-09,2008-10,2009-05,2009-06,2009-07,2009-08,2009-09,2009-10,2010-05,2010-06,2010-07,2010-08,2010-09,2010-10,2011-05,2011-06,2011-07,2011-08,2011-09,2011-10,2012-05,2012-06,2012-07,2012-08,2012-09,2012-10,2013-05,2013-06,2013-07,2013-08,2013-09,2013-10,2014-05,2014-06,2014-07,2014-08,2014-09,2014-10"
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
