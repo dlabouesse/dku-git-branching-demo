@@ -71,7 +71,7 @@
             {
               "out": "weather_partitioned_filtered",
               "idim": "Date_partitioning",
-              "odim": "date",
+              "odim": "Date_partitioning",
               "func": "equals",
               "params": {}
             }
@@ -91,11 +91,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 23,
+    "versionNumber": 24,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583932021525
+    "lastModifiedOn": 1583932343578
   },
   "creationTag": {
     "versionNumber": 0,

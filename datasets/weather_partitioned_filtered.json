@@ -59,7 +59,7 @@
     "considerMissingRequestedPartitionsAsEmpty": true,
     "dimensions": [
       {
-        "name": "date",
+        "name": "Date_partitioning",
         "params": {
           "period": "MONTH"
         },
@@ -68,11 +68,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583931916228
+    "lastModifiedOn": 1583932343573
   },
   "creationTag": {
     "versionNumber": 0,
@@ -302,6 +302,10 @@
       },
       "impala": {
         "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
       },
       "python": {}
     },
