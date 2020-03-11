@@ -6,7 +6,7 @@
         "input": "Station",
         "col": "Tmax",
         "string": "1",
-        "num": 0,
+        "num": 1,
         "operator": "\u003d\u003d [number]"
       }
     ]
