@@ -25,8 +25,42 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "Date",
+        "formats": [
+          "yyyy-MM-dd"
+        ],
+        "columns": [
+          "Date"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnCopier",
+      "params": {
+        "outputColumn": "Date_partitioning",
+        "inputColumn": "Date"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -34,7 +68,33 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Cool": 100,
+    "Depth": 100,
+    "Water1": 100,
+    "Tmin": 100,
+    "Tavg": 100,
+    "Depart": 100,
+    "AvgSpeed": 100,
+    "Date_partitionning": 183,
+    "CodeSum": 100,
+    "Date_parsed": 183,
+    "DewPoint": 100,
+    "ResultDir": 100,
+    "Date": 100,
+    "SeaLevel": 100,
+    "StnPressure": 100,
+    "Station": 100,
+    "Sunset": 100,
+    "ResultSpeed": 100,
+    "Heat": 100,
+    "WetBulb": 100,
+    "Tmax": 100,
+    "Date_partitioning": 169,
+    "SnowFall": 100,
+    "Sunrise": 100,
+    "PrecipTotal": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
