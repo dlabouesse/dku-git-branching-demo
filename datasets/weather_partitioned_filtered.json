@@ -68,11 +68,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583931138458
+    "lastModifiedOn": 1583931916228
   },
   "creationTag": {
     "versionNumber": 0,
@@ -99,15 +99,19 @@
     "columns": [
       {
         "name": "Station",
-        "type": "string"
+        "type": "bigint"
+      },
+      {
+        "name": "Date",
+        "type": "date"
       },
       {
         "name": "Tmax",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "Tmin",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "Tavg",
@@ -119,7 +123,7 @@
       },
       {
         "name": "DewPoint",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "WetBulb",
@@ -171,11 +175,11 @@
       },
       {
         "name": "ResultSpeed",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "ResultDir",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "AvgSpeed",
