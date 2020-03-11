@@ -1,0 +1,116 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "Station": 100,
+      "Date": 183,
+      "day_of_year": 100,
+      "Tmax": 100,
+      "Tmin": 100,
+      "Tavg": 100,
+      "Depart": 100,
+      "DewPoint": 100,
+      "WetBulb": 100,
+      "Heat": 100,
+      "Cool": 100,
+      "day_lasting": 100,
+      "CodeSum": 100,
+      "SnowFall": 100,
+      "PrecipTotal": 100,
+      "StnPressure": 100,
+      "SeaLevel": 100,
+      "ResultSpeed": 100,
+      "ResultDir": 100,
+      "AvgSpeed": 100,
+      "Trap": 100,
+      "GeoPoint": 204,
+      "CULEX TARSALIS": 120,
+      "UNSPECIFIED CULEX": 143,
+      "CULEX ERRATICUS": 128,
+      "CULEX SALINARIUS": 135,
+      "CULEX PIPIENS": 113,
+      "CULEX TERRITANS": 128,
+      "CULEX RESTUANS": 120,
+      "CULEX PIPIENS/RESTUANS": 180,
+      "WnvPresent_max": 120
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [
+      {
+        "column": "WnvPresent_max",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "WnvPresent_max",
+          "columnType": "NUMERICAL",
+          "currentMode": "NUMERICAL",
+          "sort": "count",
+          "selectedValues": {}
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "WnvPresent_max",
+          "values": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "WnvPresent_max",
+          "params": {
+            "type": "LongMeaning",
+            "ok": false,
+            "nok": false,
+            "empty": true
+          }
+        }
+      }
+    ],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": []
+}
