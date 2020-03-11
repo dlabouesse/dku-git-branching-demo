@@ -68,11 +68,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583931026975
+    "lastModifiedOn": 1583931107356
   },
   "creationTag": {
     "versionNumber": 0,
@@ -97,10 +97,6 @@
     "columns": [
       {
         "name": "Station",
-        "type": "string"
-      },
-      {
-        "name": "Date",
         "type": "string"
       },
       {
