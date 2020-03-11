@@ -73,7 +73,8 @@
           "Block",
           "Street",
           "AddressNumberAndStreet",
-          "Id"
+          "Id",
+          "NumMosquitos"
         ],
         "keep": false,
         "appliesTo": "COLUMNS"
@@ -88,6 +89,22 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
+  "columnWidthsByName": {
+    "Address": 300,
+    "AddressAccuracy": 128,
+    "Trap": 100,
+    "Latitude": 100,
+    "Longitude": 100,
+    "Date": 183,
+    "GeoPoint": 204,
+    "AddressNumberAndStreet": 180,
+    "Block": 100,
+    "Street": 100,
+    "Id": 100,
+    "NumMosquitos": 105,
+    "WnvPresent": 100,
+    "Species": 169
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
