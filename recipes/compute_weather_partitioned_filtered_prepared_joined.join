@@ -142,11 +142,6 @@
       "table": 1
     },
     {
-      "name": "NumMosquitos_sum",
-      "type": "bigint",
-      "table": 1
-    },
-    {
       "name": "WnvPresent_max",
       "type": "bigint",
       "table": 1
@@ -294,10 +289,6 @@
           {
             "name": "Species_concat",
             "type": "string"
-          },
-          {
-            "name": "NumMosquitos_sum",
-            "type": "bigint"
           },
           {
             "name": "WnvPresent_max",
