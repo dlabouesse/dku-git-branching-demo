@@ -139,6 +139,28 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
+  "columnWidthsByName": {
+    "AvgSpeed": 106,
+    "day_of_year": 127,
+    "CodeSum": 100,
+    "Cool": 100,
+    "day_lasting": 127,
+    "DewPoint": 106,
+    "ResultDir": 113,
+    "Date": 100,
+    "SeaLevel": 106,
+    "StnPressure": 127,
+    "Station": 100,
+    "ResultSpeed": 127,
+    "Heat": 100,
+    "WetBulb": 100,
+    "Tmax": 100,
+    "Tmin": 100,
+    "Tavg": 100,
+    "Depart": 100,
+    "SnowFall": 106,
+    "PrecipTotal": 127
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
