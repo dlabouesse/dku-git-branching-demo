@@ -7,7 +7,7 @@
         "col": "Tmax",
         "string": "1",
         "num": 0,
-        "operator": "\u003d\u003d [string]"
+        "operator": "\u003d\u003d [number]"
       }
     ]
   },
