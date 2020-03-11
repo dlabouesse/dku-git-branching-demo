@@ -141,6 +141,7 @@
   "analysisColumnData": {},
   "columnWidthsByName": {
     "AvgSpeed": 106,
+    "day_length": 100,
     "day_of_year": 127,
     "CodeSum": 100,
     "Cool": 100,
