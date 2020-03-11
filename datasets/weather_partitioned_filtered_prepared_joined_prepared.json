@@ -68,11 +68,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583936768286
+    "lastModifiedOn": 1583947683170
   },
   "creationTag": {
     "versionNumber": 0,
@@ -140,7 +140,7 @@
         "type": "bigint"
       },
       {
-        "name": "day_lasting",
+        "name": "day_length",
         "type": "string"
       },
       {
