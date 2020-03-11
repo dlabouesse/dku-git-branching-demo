@@ -68,11 +68,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583947731510
+    "lastModifiedOn": 1583948164544
   },
   "creationTag": {
     "versionNumber": 0,
@@ -141,7 +141,7 @@
       },
       {
         "name": "day_length",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "CodeSum",
