@@ -82,8 +82,8 @@
       "table": 0
     },
     {
-      "name": "day_lasting",
-      "type": "bigint",
+      "name": "day_length",
+      "type": "string",
       "table": 0
     },
     {
@@ -243,8 +243,8 @@
             "type": "bigint"
           },
           {
-            "name": "day_lasting",
-            "type": "bigint"
+            "name": "day_length",
+            "type": "string"
           },
           {
             "name": "CodeSum",
