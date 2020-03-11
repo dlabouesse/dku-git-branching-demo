@@ -68,11 +68,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583931768546
+    "lastModifiedOn": 1583931791301
   },
   "creationTag": {
     "versionNumber": 0,
@@ -101,10 +101,6 @@
       },
       {
         "name": "Date",
-        "type": "date"
-      },
-      {
-        "name": "Date_partitioning",
         "type": "date"
       },
       {
