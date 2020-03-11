@@ -68,11 +68,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583936494625
+    "lastModifiedOn": 1583936768286
   },
   "creationTag": {
     "versionNumber": 0,
@@ -184,8 +184,36 @@
         "type": "string"
       },
       {
-        "name": "Species_concat",
-        "type": "string"
+        "name": "CULEX TARSALIS",
+        "type": "bigint"
+      },
+      {
+        "name": "UNSPECIFIED CULEX",
+        "type": "bigint"
+      },
+      {
+        "name": "CULEX ERRATICUS",
+        "type": "bigint"
+      },
+      {
+        "name": "CULEX SALINARIUS",
+        "type": "bigint"
+      },
+      {
+        "name": "CULEX PIPIENS",
+        "type": "bigint"
+      },
+      {
+        "name": "CULEX TERRITANS",
+        "type": "bigint"
+      },
+      {
+        "name": "CULEX RESTUANS",
+        "type": "bigint"
+      },
+      {
+        "name": "CULEX PIPIENS/RESTUANS",
+        "type": "bigint"
       },
       {
         "name": "WnvPresent_max",
