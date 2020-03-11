@@ -26,6 +26,7 @@
   "settings": {
     "flowAnchorSourcesAndSinks": false,
     "gitCommitMode": "AUTO",
+    "useRemoteGit": true,
     "disableAutomaticTriggers": false,
     "integrations": {
       "integrations": []
@@ -179,11 +180,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 60,
+    "versionNumber": 61,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583945131643
+    "lastModifiedOn": 1583945551659
   },
   "creationTag": {
     "versionNumber": 0,
