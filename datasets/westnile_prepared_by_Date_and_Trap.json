@@ -61,11 +61,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
-      "login": "dlabouesse"
+      "login": "admin"
     },
-    "lastModifiedOn": 1530290948168
+    "lastModifiedOn": 1583936312043
   },
   "creationTag": {
     "versionNumber": 0,
@@ -89,45 +89,29 @@
     }
   },
   "schema": {
-    "userModified": true,
     "columns": [
       {
         "name": "Date",
-        "type": "date",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "date"
       },
       {
         "name": "Trap",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "GeoPoint",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Species_concat",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "NumMosquitos_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "WnvPresent_max",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       }
-    ]
+    ],
+    "userModified": true
   },
   "metrics": {
     "probes": [
@@ -204,5 +188,6 @@
     "displayedState": {
       "checks": []
     }
-  }
+  },
+  "customFields": {}
 }
