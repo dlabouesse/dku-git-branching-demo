@@ -68,11 +68,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583862166509
+    "lastModifiedOn": 1583931138458
   },
   "creationTag": {
     "versionNumber": 0,
@@ -98,91 +98,87 @@
   "schema": {
     "columns": [
       {
-        "name": "col_0",
+        "name": "Station",
         "type": "string"
       },
       {
-        "name": "col_1",
+        "name": "Tmax",
         "type": "string"
       },
       {
-        "name": "col_2",
+        "name": "Tmin",
         "type": "string"
       },
       {
-        "name": "col_3",
+        "name": "Tavg",
         "type": "string"
       },
       {
-        "name": "col_4",
+        "name": "Depart",
         "type": "string"
       },
       {
-        "name": "col_5",
+        "name": "DewPoint",
         "type": "string"
       },
       {
-        "name": "col_6",
+        "name": "WetBulb",
         "type": "string"
       },
       {
-        "name": "col_7",
+        "name": "Heat",
         "type": "string"
       },
       {
-        "name": "col_8",
+        "name": "Cool",
         "type": "string"
       },
       {
-        "name": "col_9",
+        "name": "Sunrise",
         "type": "string"
       },
       {
-        "name": "col_10",
+        "name": "Sunset",
         "type": "string"
       },
       {
-        "name": "col_11",
+        "name": "CodeSum",
         "type": "string"
       },
       {
-        "name": "col_12",
+        "name": "Depth",
         "type": "string"
       },
       {
-        "name": "col_13",
+        "name": "Water1",
         "type": "string"
       },
       {
-        "name": "col_14",
+        "name": "SnowFall",
         "type": "string"
       },
       {
-        "name": "col_15",
+        "name": "PrecipTotal",
         "type": "string"
       },
       {
-        "name": "col_16",
+        "name": "StnPressure",
         "type": "string"
       },
       {
-        "name": "col_17",
+        "name": "SeaLevel",
         "type": "string"
       },
       {
-        "name": "col_18",
+        "name": "ResultSpeed",
         "type": "string"
       },
       {
-        "name": "col_19",
+        "name": "ResultDir",
         "type": "string"
       },
       {
-        "name": "col_20",
-        "type": "string"
-      },
-      {
-        "name": "col_21",
+        "name": "AvgSpeed",
         "type": "string"
       }
     ],
