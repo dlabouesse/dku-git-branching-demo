@@ -25,8 +25,75 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "unfoldedValues": [
+            "CULEX PIPIENS/RESTUANS",
+            "CULEX RESTUANS",
+            "CULEX TERRITANS",
+            "CULEX PIPIENS",
+            "CULEX SALINARIUS",
+            "CULEX ERRATICUS",
+            "UNSPECIFIED CULEX",
+            "CULEX TARSALIS"
+          ]
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "SplitUnfold",
+      "params": {
+        "overflowAction": "ERROR",
+        "keepEmptyChunks": false,
+        "column": "Species_concat",
+        "limit": 100,
+        "separator": ","
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "CULEX TARSALIS",
+          "UNSPECIFIED CULEX",
+          "CULEX ERRATICUS",
+          "CULEX SALINARIUS",
+          "CULEX PIPIENS",
+          "CULEX TERRITANS",
+          "CULEX RESTUANS",
+          "CULEX PIPIENS/RESTUANS"
+        ],
+        "appliesTo": "COLUMNS",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Species_concat"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -34,7 +101,40 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "CULEX TARSALIS": 120,
+    "Cool": 100,
+    "CULEX RESTUANS": 120,
+    "GeoPoint": 204,
+    "CULEX PIPIENS/RESTUANS": 180,
+    "Tmin": 100,
+    "Tavg": 100,
+    "Depart": 100,
+    "CULEX SALINARIUS": 135,
+    "AvgSpeed": 100,
+    "day_of_year": 100,
+    "CodeSum": 100,
+    "day_lasting": 100,
+    "Trap": 100,
+    "DewPoint": 100,
+    "ResultDir": 100,
+    "Date": 183,
+    "SeaLevel": 100,
+    "StnPressure": 100,
+    "Species_concat": 300,
+    "Station": 100,
+    "ResultSpeed": 100,
+    "UNSPECIFIED CULEX": 143,
+    "Heat": 100,
+    "WetBulb": 100,
+    "CULEX PIPIENS": 113,
+    "CULEX TERRITANS": 128,
+    "Tmax": 100,
+    "SnowFall": 100,
+    "WnvPresent_max": 120,
+    "PrecipTotal": 100,
+    "CULEX ERRATICUS": 128
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
