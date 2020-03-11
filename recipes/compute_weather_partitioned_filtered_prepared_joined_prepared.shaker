@@ -112,6 +112,7 @@
     "Depart": 100,
     "CULEX SALINARIUS": 135,
     "AvgSpeed": 100,
+    "day_length": 100,
     "day_of_year": 100,
     "CodeSum": 100,
     "day_lasting": 100,
