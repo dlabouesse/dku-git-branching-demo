@@ -68,11 +68,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583932405481
+    "lastModifiedOn": 1583937382231
   },
   "creationTag": {
     "versionNumber": 0,
@@ -141,7 +141,7 @@
       },
       {
         "name": "day_lasting",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "CodeSum",
@@ -153,7 +153,7 @@
       },
       {
         "name": "PrecipTotal",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "StnPressure",
@@ -184,11 +184,35 @@
         "type": "string"
       },
       {
-        "name": "Species_concat",
-        "type": "string"
+        "name": "CULEX TARSALIS",
+        "type": "bigint"
       },
       {
-        "name": "NumMosquitos_sum",
+        "name": "UNSPECIFIED CULEX",
+        "type": "bigint"
+      },
+      {
+        "name": "CULEX ERRATICUS",
+        "type": "bigint"
+      },
+      {
+        "name": "CULEX SALINARIUS",
+        "type": "bigint"
+      },
+      {
+        "name": "CULEX PIPIENS",
+        "type": "bigint"
+      },
+      {
+        "name": "CULEX TERRITANS",
+        "type": "bigint"
+      },
+      {
+        "name": "CULEX RESTUANS",
+        "type": "bigint"
+      },
+      {
+        "name": "CULEX PIPIENS/RESTUANS",
         "type": "bigint"
       },
       {
