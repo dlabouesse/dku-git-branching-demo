@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583931355687
+    "lastModifiedOn": 1583931526509
   },
   "creationTag": {
     "versionNumber": 0,
@@ -92,7 +92,11 @@
       },
       {
         "name": "Date",
-        "type": "string"
+        "type": "date"
+      },
+      {
+        "name": "Date_partitioning",
+        "type": "date"
       },
       {
         "name": "Tmax",
