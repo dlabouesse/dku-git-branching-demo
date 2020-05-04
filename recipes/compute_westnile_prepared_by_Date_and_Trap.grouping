@@ -86,7 +86,7 @@
       "count": false,
       "$idx": 1,
       "sum": false,
-      "concat": false,
+      "concat": true,
       "type": "string",
       "concatDistinct": false,
       "sum2": false,
@@ -180,6 +180,10 @@
           },
           {
             "name": "GeoPoint",
+            "type": "string"
+          },
+          {
+            "name": "Species_concat",
             "type": "string"
           },
           {
