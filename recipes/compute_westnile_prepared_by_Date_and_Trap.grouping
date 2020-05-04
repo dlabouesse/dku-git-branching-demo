@@ -86,13 +86,14 @@
       "count": false,
       "$idx": 1,
       "sum": false,
-      "concat": true,
+      "concat": false,
       "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false,
       "orderColumn": "Date",
@@ -179,10 +180,6 @@
           },
           {
             "name": "GeoPoint",
-            "type": "string"
-          },
-          {
-            "name": "Species_concat",
             "type": "string"
           },
           {
