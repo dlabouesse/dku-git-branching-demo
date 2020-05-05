@@ -68,11 +68,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588679826112
+    "lastModifiedOn": 1588679829714
   },
   "creationTag": {
     "versionNumber": 0,
@@ -145,7 +145,7 @@
       },
       {
         "name": "CodeSum",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "SnowFall",
@@ -217,7 +217,7 @@
       },
       {
         "name": "WnvPresent_max",
-        "type": "double"
+        "type": "bigint"
       }
     ],
     "userModified": false
