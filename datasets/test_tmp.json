@@ -68,11 +68,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588679692466
+    "lastModifiedOn": 1588679806856
   },
   "creationTag": {
     "versionNumber": 0,
@@ -94,8 +94,133 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "Station",
+        "type": "bigint"
+      },
+      {
+        "name": "Date",
+        "type": "date"
+      },
+      {
+        "name": "day_of_year",
+        "type": "bigint"
+      },
+      {
+        "name": "Tmax",
+        "type": "bigint"
+      },
+      {
+        "name": "Tmin",
+        "type": "bigint"
+      },
+      {
+        "name": "Tavg",
+        "type": "bigint"
+      },
+      {
+        "name": "Depart",
+        "type": "bigint"
+      },
+      {
+        "name": "DewPoint",
+        "type": "bigint"
+      },
+      {
+        "name": "WetBulb",
+        "type": "bigint"
+      },
+      {
+        "name": "Heat",
+        "type": "bigint"
+      },
+      {
+        "name": "Cool",
+        "type": "bigint"
+      },
+      {
+        "name": "day_length",
+        "type": "bigint"
+      },
+      {
+        "name": "CodeSum",
+        "type": "string"
+      },
+      {
+        "name": "SnowFall",
+        "type": "double"
+      },
+      {
+        "name": "PrecipTotal",
+        "type": "double"
+      },
+      {
+        "name": "StnPressure",
+        "type": "double"
+      },
+      {
+        "name": "SeaLevel",
+        "type": "double"
+      },
+      {
+        "name": "ResultSpeed",
+        "type": "double"
+      },
+      {
+        "name": "ResultDir",
+        "type": "bigint"
+      },
+      {
+        "name": "AvgSpeed",
+        "type": "double"
+      },
+      {
+        "name": "Trap",
+        "type": "string"
+      },
+      {
+        "name": "GeoPoint",
+        "type": "string"
+      },
+      {
+        "name": "CULEX TARSALIS",
+        "type": "bigint"
+      },
+      {
+        "name": "UNSPECIFIED CULEX",
+        "type": "bigint"
+      },
+      {
+        "name": "CULEX ERRATICUS",
+        "type": "bigint"
+      },
+      {
+        "name": "CULEX SALINARIUS",
+        "type": "bigint"
+      },
+      {
+        "name": "CULEX PIPIENS",
+        "type": "bigint"
+      },
+      {
+        "name": "CULEX TERRITANS",
+        "type": "bigint"
+      },
+      {
+        "name": "CULEX RESTUANS",
+        "type": "bigint"
+      },
+      {
+        "name": "CULEX PIPIENS/RESTUANS",
+        "type": "bigint"
+      },
+      {
+        "name": "WnvPresent_max",
+        "type": "bigint"
+      }
+    ],
+    "userModified": false
   },
   "metrics": {
     "probes": [
