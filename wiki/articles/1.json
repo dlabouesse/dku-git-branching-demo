@@ -1,13 +1,13 @@
 {
-  "name": "coucou",
+  "name": "Home",
   "layout": "WIKI_ARTICLE",
   "attachments": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588603496578
+    "lastModifiedOn": 1588680496192
   },
   "creationTag": {
     "versionNumber": 0,
