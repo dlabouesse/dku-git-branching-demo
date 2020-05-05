@@ -68,11 +68,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588679813629
+    "lastModifiedOn": 1588679813750
   },
   "creationTag": {
     "versionNumber": 0,
@@ -97,83 +97,83 @@
     "columns": [
       {
         "name": "Station",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "Date",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "day_of_year",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "Tmax",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "Tmin",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "Tavg",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "Depart",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "DewPoint",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "WetBulb",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "Heat",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "Cool",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "day_length",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "CodeSum",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "SnowFall",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "PrecipTotal",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "StnPressure",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "SeaLevel",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "ResultSpeed",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "ResultDir",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "AvgSpeed",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "Trap",
@@ -185,39 +185,39 @@
       },
       {
         "name": "CULEX TARSALIS",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "UNSPECIFIED CULEX",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "CULEX ERRATICUS",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "CULEX SALINARIUS",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "CULEX PIPIENS",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "CULEX TERRITANS",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "CULEX RESTUANS",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "CULEX PIPIENS/RESTUANS",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "WnvPresent_max",
-        "type": "string"
+        "type": "bigint"
       }
     ],
     "userModified": false
