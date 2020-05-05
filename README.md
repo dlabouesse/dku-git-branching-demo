@@ -1,1 +1,1 @@
-wiki/articles/1.md
+Sample Dataiku project used to demonstrate git branching capabilities.
