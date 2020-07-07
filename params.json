@@ -30,8 +30,22 @@
       "exportGitRepository": false,
       "exportInsightsData": false,
       "useManualPluginsInfo": false,
-      "includedDatasetsData": [],
-      "includedSavedModels": [],
+      "includedDatasetsData": [
+        {
+          "name": "westnile"
+        },
+        {
+          "name": "weather"
+        },
+        {
+          "name": "WestnileToScore"
+        }
+      ],
+      "includedSavedModels": [
+        {
+          "id": "G9aQgHNk"
+        }
+      ],
       "includedManagedFolders": [],
       "shareAllInputDatasets": false
     }
@@ -199,11 +213,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 92,
+    "versionNumber": 93,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1594118740143
+    "lastModifiedOn": 1594118831974
   },
   "creationTag": {
     "versionNumber": 0,
