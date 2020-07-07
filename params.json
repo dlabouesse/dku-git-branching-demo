@@ -16,38 +16,15 @@
   "exposedObjects": {
     "objects": []
   },
-  "projectType": "REGULAR",
-  "bundleExporterSettings": {
-    "exportOptions": {
-      "exportUploads": false,
-      "exportManagedFS": false,
-      "exportAnalysisModels": false,
-      "exportSavedModels": false,
-      "exportManagedFolders": false,
-      "exportAllInputDatasets": false,
-      "exportAllDatasets": false,
-      "exportAllInputManagedFolders": false,
-      "exportGitRepository": false,
-      "exportInsightsData": false,
-      "useManualPluginsInfo": false,
-      "includedDatasetsData": [
-        {
-          "name": "westnile"
-        },
-        {
-          "name": "weather"
-        },
-        {
-          "name": "WestnileToScore"
-        }
-      ],
-      "includedSavedModels": [
-        {
-          "id": "G9aQgHNk"
-        }
-      ],
-      "includedManagedFolders": [],
-      "shareAllInputDatasets": false
+  "projectType": "BUNDLE_CONTAINER",
+  "bundleContainerSettings": {
+    "remapping": {
+      "connections": [],
+      "codeEnvs": []
+    },
+    "codeEnvsBehavior": {
+      "envImportSpecificationMode": "SPECIFIED",
+      "importTimeMode": "INSTALL_IF_MISS"
     }
   },
   "owner": "admin",
@@ -213,11 +190,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 94,
+    "versionNumber": 95,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1594118853060
+    "lastModifiedOn": 1594119180521
   },
   "creationTag": {
     "versionNumber": 0,

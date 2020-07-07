@@ -4,6 +4,7 @@
   "type": "step_based",
   "name": "rebuild flow",
   "active": false,
+  "runAsUser": "admin",
   "versionTag": {
     "versionNumber": 4,
     "lastModifiedBy": {
