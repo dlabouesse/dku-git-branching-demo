@@ -141,7 +141,7 @@
       }
     }
   },
-  "name": "Git branching demo",
+  "name": "Git branching demo (dev)",
   "imgPattern": 4,
   "metrics": {
     "probes": [],
@@ -198,11 +198,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 98,
+    "versionNumber": 99,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1600695265484
+    "lastModifiedOn": 1600695270579
   },
   "creationTag": {
     "versionNumber": 0,
@@ -211,7 +211,7 @@
     },
     "lastModifiedOn": 1530199972120
   },
-  "shortDesc": "Project is used for the Azure ML Studio competitor benchmark.\nThe project *Kaggle - West Nile Virus* was created by Dimitri Labouesse on Jun 28th 2018.\nThe project *GITBRANCHINGDEMO* was copied from *KAGGLEWESTNILEVIRUS* by Administrator on Mar 10th 2020",
+  "shortDesc": "Project is used for the Azure ML Studio competitor benchmark.\nThe project *Kaggle - West Nile Virus* was created by Dimitri Labouesse on Jun 28th 2018.\nThe project *GITBRANCHINGDEMO* was copied from *KAGGLEWESTNILEVIRUS* by Administrator on Mar 10th 2020\nThe project *GIT_BRANCHING_DEMO_DEV* was copied from *GITBRANCHINGDEMO* by Administrator on Sep 21st 2020",
   "tags": [
     "azure poc",
     "imported",
