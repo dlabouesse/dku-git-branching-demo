@@ -13,10 +13,11 @@
       "runScenarios": false,
       "manageDashboardAuthorizations": false,
       "manageExposedElements": false,
-      "manageAdditionalDashboardUsers": false
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
     },
     "id": "wKgnSnC5UDIX4F56",
-    "key": "8VYvfmDlyc3nGUy3jN7oJqVrcjpaUiDi",
+    "key": "QYqU3mGoiPbVGe1uaRmRdAcrdTaoCsQ8",
     "label": "Key for Web app test(JSIVVkL)",
     "createdOn": 1570822493989
   }
